@@ -24,7 +24,8 @@
 </head>
 
 <body>
-
+    <!-- Header : Container met Navigatie Logo(navLogo) - Navigatie Menu (navMenu) - Navigatie Social Media (navSM) -->
+    <!-- de indicator zijn de drie puntjes bij mouseover op navMenu-->
     <header>
         <div class="container">
             <div class="navLogo">
@@ -54,20 +55,23 @@
         </div>
     </header>
 
-
-    <div class="backgroundfoto">
-        <h2>Een kleine paragraafje om een voorbeeld te geven</h2>
-        <h1>Neem deel aan 't Festival!</h1>
-        <h2>09.06 &rarr; 12.06</h2>
-        <div class="infohomepage"></div>
-        <a href="ticket.html"><button>Koop je ticket!</button></a>
-    </div>
-    <div class="slogan">
-        <marquee behavior="scroll" direction="right" scrollamount="20">Lorem Ipsum Ipsududm</marquee>
-    </div>
     <main>
+        <!-- Sectie 1 : Koop Tickets & Bewegende tekst -->
         <section>
-            <div class="artikel1">
+            <div class="sectie1">
+                <h2>Een kleine paragraafje om een voorbeeld te geven</h2>
+                <h1>Neem deel aan 't Festival!</h1>
+                <h2>09.06 &rarr; 12.06</h2>
+                <a href="ticket.html"><button>Koop je ticket!</button></a>
+            </div>
+            <div class="slogan">
+                <marquee behavior="scroll" direction="right" scrollamount="20">Lorem Ipsum Ipsududm</marquee>
+            </div>
+        </section>
+
+        <!-- Sectie 2 : Een container voor Button Over Ons -->
+        <section>
+            <div class="sectie2">
                 <br><br><br>
                 <div class="flexbox2">
                     <h1>Over ons</h1>
@@ -79,34 +83,39 @@
                     <a href="overons.html"><button>MEER INFO</button></a>
                 </div>
             </div>
-
         </section>
-        <div class="artikel2">
-            <div class="bigcont">
-                <div class="cont1">
-                    <img src="/assets/photos/fotofest.jpg" alt="" width="100%">
-                    <h3>Evenement 1</h3>
-                    <p>At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum
-                        deleniti atque corrupti</p>
-                    <div class="meerinfo">
-                        <p>Meer info</p>
+
+        <!-- Sectie 3 : Twee containers naast elkaar voor Button Evenement -->
+        <section>
+            <div class="sectie3">
+                <div class="cont1en2flexen">
+                    <div class="cont1">
+                        <img src="/assets/photos/fotofest.jpg" alt="" width="100%">
+                        <h3>Evenement 1</h3>
+                        <p>At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium
+                            voluptatum
+                            deleniti atque corrupti</p>
+                        <div class="meerinfo">
+                            <p>Meer info</p>
+                        </div>
+                        <marquee behavior="scroll" direction="right" scrollamount="20">SOLD OUT</marquee>
                     </div>
-                    <marquee behavior="scroll" direction="right" scrollamount="20">SOLD OUT</marquee>
-                </div>
-                <div class="cont2">
-                    <img src="/assets/photos/festivaldj.jpg" alt="" width="100%">
-                    <h3>Evenement 2</h3>
-                    <p>At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis
-                    </p>
-                    <div class="meerinfo">
-                        <p>BINNENKORT MEER</p>
+                    <div class="cont2">
+                        <img src="/assets/photos/festivaldj.jpg" alt="" width="100%">
+                        <h3>Evenement 2</h3>
+                        <p>At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis
+                        </p>
+                        <div class="meerinfo">
+                            <p>BINNENKORT MEER</p>
+                        </div>
+                        <marquee behavior="scroll" direction="right" scrollamount="20">NOT AVAILABLE</marquee>
                     </div>
-                    <marquee behavior="scroll" direction="right" scrollamount="20">NOT AVAILABLE</marquee>
                 </div>
             </div>
-        </div>
+        </section>
     </main>
 
+    <!--Footer : Flex de Logo boven tekst van sponsor / Drie logo's van sponsors / flex1&2 voor Social Media & FAQ -->
     <footer>
         <div class="flex">
             <img src="/assets/photos/Logo.png" alt="">
@@ -140,6 +149,7 @@
             </div>
         </div>
     </footer>
+
     <script src="../assets/js/home.js"></script>
 </body>
 

@@ -202,8 +202,8 @@ p {
     text-decoration: none;
 }
 
-.backgroundfoto {
-    background-image: url(./giphy3.gif);
+.sectie1 {
+    background-image: url(/assets/photos/giphy3.gif);
     background-size: cover;
     width: 100%;
     height: 900px;
@@ -213,9 +213,7 @@ p {
     align-items: center;
 }
 
-.infohomepage {
-    margin-left: 50px;
-}
+
 
 .slogan {
     width: 100%;
@@ -362,10 +360,10 @@ button:hover::after {
     }
 }
 
-.artikel1 {
+.sectie2 {
     width: 100%;
     height: 900px;
-    background-image: url(./festivaldj.jpg);
+    background-image: url(/assets/photos/festivaldj.jpg);
     background-size: cover;
 }
 
@@ -384,15 +382,15 @@ button:hover::after {
     padding: 50px;
 }
 
-.artikel2 {
-    background-image: url(./eventshomepage.jpg);
+.sectie3 {
+    background-image: url(/assets/photos/eventshomepage.jpg);
     background-size: cover;
     height: 1000px;
     width: 100%;
     color: white;
 }
 
-.bigcont {
+.cont1en2flexen {
     width: 100%;
     height: 1000px;
     display: flex;

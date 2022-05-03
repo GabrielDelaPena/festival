@@ -215,7 +215,24 @@ p {
     text-decoration: none;
 }
 
-.backgroundevent {
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.sectie1 {
     background-image: url(/assets/photos/events.jpg);
     background-size: cover;
     width: 100%;
@@ -224,18 +241,21 @@ p {
 
 .containers {
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     align-items: center;
     justify-content: space-evenly;
-    width: 100%;
+    width: 80%;
     height: 800px;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: #89ff00;
 
 }
 
 
 .container1 {
     background-color: #ffffff;
-    width: 70%;
+    width: 20%;
     height: 150px;
     border-radius: 30px;
     display: flex;
@@ -247,14 +267,33 @@ p {
 
 .container2 {
     background-color: #ffffff;
-    width: 70%;
-    height: 150px;
+    width: 20%;
+    height: 300px;
     border-radius: 30px;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     text-align: left;
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 footer {
     background-color: #7a1399;

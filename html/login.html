@@ -23,59 +23,81 @@
     <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
 </head>
 
-<header>
-    <div class="back"><a href="home.html">TERUG</a></div>
-</header>
-
 <body>
-    <div class="login-wrap">
-        <div class="login-html">
-            <input id="tab-1" type="radio" name="tab" class="sign-in" checked><label for="tab-1" class="tab">Log
-                In</label>
-            <input id="tab-2" type="radio" name="tab" class="sign-up"><label for="tab-2" class="tab">INFO</label>
-            <div class="login-form">
-                <div class="sign-in-htm">
-                    <div class="group">
-                        <label for="user" class="label">Gebruikersnaam</label>
-                        <input id="user" type="text" class="input">
-                    </div>
-                    <div class="group">
-                        <label for="pass" class="label">Wachtwoord</label>
-                        <input id="pass" type="password" class="input" data-type="password">
-                    </div>
-                    <div class="group">
-                        <input id="check" type="checkbox" class="check" checked>
-                        <label for="check"><span class="icon"></span> Onthouden</label>
-                    </div>
-                    <div class="group">
-                        <input type="submit" class="button" value="Sign In">
-                    </div>
-                    <div class="hr"></div>
-                    <div class="foot-lnk">
-                        <a href="#forgot">Wachtwoord vergeten?</a>
-                    </div>
-                    <div class="logo">
-                        <img src="/assets/photos/Logo.png" alt="" width="100px">
-                    </div>
-                </div>
-                <div class="sign-up-htm">
-                    <p>Nam a finibus eros. Aliquam id blandit ex, vitae consequat est. Class aptent taciti sociosqu ad
-                        litora torquent per conubia nostra, per inceptos himenaeos. Praesent sed velit a turpis finibus
-                        finibus eget ac orci. Morbi interdum dui sit amet pretium vehicula. Phasellus iaculis diam ut
-                        mauris porttitor blandit. Integer gravida metus id dapibus pulvinar.<br><br> Maecenas interdum
-                        id ligula
-                        at condimentum. Quisque eget purus tortor. Cras luctus arcu sed enim vulputate condimentum.
-                        Phasellus et pharetra magna. Fusce eu ante in nulla ullamcorper tristique sit amet ac risus.
-                        Nunc eleifend semper eleifend. Lorem ipsum dolor sit amet, consectetur adipiscing elit.<br><br>
+    <!-- Header : Een Button "Terug" linksboven-->
+    <header>
+        <div class="back"><a href="home.html">TERUG</a></div>
+    </header>
 
-                        Etiam porttitor rhoncus sem, vel tincidunt velit. Nam in eros nec odio convallis fringilla ut
-                        nec magna. Morbi congue risus quam. Proin placerat augue eu purus accumsan, vel convallis eros
-                        finibus. Integer tristique dolor fermentum ex blandit, et posuere lorem congue. Integer
-                        condimentum at mauris vel fringilla.
+    <main>
+        <!-- Sectie 1 : een Form voor login admin-->
+        <section>
+            <div class="login-wrap">
+                <div class="login-html">
+                    <input id="tab-1" type="radio" name="tab" class="sign-in" checked><label for="tab-1" class="tab">Log
+                        In</label>
+                    <input id="tab-2" type="radio" name="tab" class="sign-up"><label for="tab-2"
+                        class="tab">INFO</label>
+                    <div class="login-form">
+                        <div class="sign-in-htm">
+                            <div class="group">
+                                <label for="user" class="label">Gebruikersnaam</label>
+                                <input id="user" type="text" class="input">
+                            </div>
+                            <div class="group">
+                                <label for="pass" class="label">Wachtwoord</label>
+                                <input id="pass" type="password" class="input" data-type="password">
+                            </div>
+                            <div class="group">
+                                <input id="check" type="checkbox" class="check" checked>
+                                <label for="check"><span class="icon"></span> Onthouden</label>
+                            </div>
+                            <div class="group">
+                                <input type="submit" class="button" value="Sign In">
+                            </div>
+                            <div class="hr"></div>
+                            <div class="foot-lnk">
+                                <a href="#forgot">Wachtwoord vergeten?</a>
+                            </div>
+                            <div class="logo">
+                                <img src="/assets/photos/Logo.png" alt="" width="100px">
+                            </div>
+                        </div>
+                        <div class="sign-up-htm">
+                            <p>Nam a finibus eros. Aliquam id blandit ex, vitae consequat est. Class aptent taciti
+                                sociosqu
+                                ad
+                                litora torquent per conubia nostra, per inceptos himenaeos. Praesent sed velit a turpis
+                                finibus
+                                finibus eget ac orci. Morbi interdum dui sit amet pretium vehicula. Phasellus iaculis
+                                diam
+                                ut
+                                mauris porttitor blandit. Integer gravida metus id dapibus pulvinar.<br><br> Maecenas
+                                interdum
+                                id ligula
+                                at condimentum. Quisque eget purus tortor. Cras luctus arcu sed enim vulputate
+                                condimentum.
+                                Phasellus et pharetra magna. Fusce eu ante in nulla ullamcorper tristique sit amet ac
+                                risus.
+                                Nunc eleifend semper eleifend. Lorem ipsum dolor sit amet, consectetur adipiscing
+                                elit.<br><br>
+
+                                Etiam porttitor rhoncus sem, vel tincidunt velit. Nam in eros nec odio convallis
+                                fringilla
+                                ut
+                                nec magna. Morbi congue risus quam. Proin placerat augue eu purus accumsan, vel
+                                convallis
+                                eros
+                                finibus. Integer tristique dolor fermentum ex blandit, et posuere lorem congue. Integer
+                                condimentum at mauris vel fringilla.
+                        </div>
+                    </div>
                 </div>
             </div>
-        </div>
-    </div>
+        </section>
+    </main>
+
+    <!-- Footer : 2 Flex's onder mekaar namelijk Social Media & FAQ -->
     <footer>
         <div class="flex">
             <hr>
@@ -94,6 +116,8 @@
             </div>
         </div>
     </footer>
+
+    <script src="/assets/js/login.js"></script>
 </body>
 
 </html>

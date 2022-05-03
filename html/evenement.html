@@ -19,6 +19,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter&family=Lobster&family=Saira+Stencil+One&display=swap"
         rel="stylesheet">
+    <script src="https://kit.fontawesome.com/2e984354dc.js" crossorigin="anonymous"></script>
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"
         integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
     <script src="https://kit.fontawesome.com/7b01b22b23.js" crossorigin="anonymous"></script>
@@ -26,6 +27,8 @@
 </head>
 
 <body>
+    <!-- Header : Container met Navigatie Logo(navLogo) - Navigatie Menu (navMenu) - Navigatie Social Media (navSM) -->
+    <!-- de indicator zijn de drie puntjes bij mouseover op navMenu-->
     <header>
         <div class="container">
             <div class="navLogo">
@@ -54,27 +57,32 @@
             </div>
         </div>
     </header>
+
     <main>
-        <div class="backgroundevent">
-            <h2>Evenement</h2>
-            <p>Bekijk hieronder alle komende evenementen van 't Festival ! /// EN TRAVAUX</p>
+        <!--Sectie1 : Container Evenement -->
+        <section>
+            <div class="sectie1">
+                <h2>Evenement</h2>
+                <p>Bekijk hieronder alle komende evenementen van 't Festival ! /// EN TRAVAUX</p>
 
 
-            <div class="containers">
-                <div class="container1">
-                    <div class="image1"><img src="/assets/photos/container1.jpg" alt="" width="250"></div>
-                    <div class="tekstdatum1">6april</div>
-                    <div class="button1">KOOP TICKETS</div>
+                <div class="containers">
+                    <div class="container1">
+                        <div class="image"><img src="/assets/photos/container1.jpg" alt="" width="250"></div>
+                        <div class="datum">ss <i class="fa-solid fa-calendar-day"></i> 6 april</div>
+                        <div class="button">KOOP TICKETS</div>
+                    </div>
+                    <div class="container2">
+                        <div class="image"><img src="/assets/photos/container2.jpg" alt="" width="250"></div>
+                        <div class="datum">6 juni</div>
+                        <div class="button">KOOP TICKETS</div>
+                    </div>
+
                 </div>
-                <div class="container2">
-                    <div class="image2"><img src="/assets/photos/container2.jpg" alt="" width="250"></div>
-                    <div class="tekstdatum2">6 juni</div>
-                    <div class="button2">KOOP TICKETS</div>
-                </div>
-
-            </div>
+        </section>
     </main>
 
+    <!--Footer : Flex de Logo boven tekst van sponsor / Drie logo's van sponsors / flex1&2 voor Social Media & FAQ -->
     <footer>
         <div class="flex">
             <img src="/assets/photos/Logo.png" alt="">
@@ -108,7 +116,8 @@
             </div>
         </div>
     </footer>
-    <script src="../assets/js/home.js"></script>
+
+    <script src="/assets/js/evenement.js"></script>
 
 </body>
 

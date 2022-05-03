@@ -21,96 +21,99 @@
 </head>
 
 <body>
+    <!-- Header : Een Button "Terug" linksboven-->
     <header>
         <div class="back"><a href="ticket.html">TERUG</a></div>
-
     </header>
 
     <main>
-        <hr>
-        <div class="centercontainer">
-            <div class="container">
-                <a href="home.html"><img src="/assets/photos/Logo.png" alt="Logo Tfestival"></a>
-                <h1>Aankoop van tickets</h1>
-                <p>* De tickets worden niet verkocht aan de minder 18 jaar.</p>
-                <p>* Producten te bestellen ter plaatse.</p>
-                <form class="registration-form">
-                    <label class="col-one-half">
-                        <span class="label-text">Familienaam</span>
-                        <input class="solid" type="text" name="firstName">
-                    </label>
-                    <label class="col-one-half">
-                        <span class="label-text">Voornaam</span>
-                        <input class="solid" type="text" name="lastName">
-                    </label>
-                    <label>
-                        <span class="label-text">Geboortedatum</span>
-                        <input class="solid" type="date" name="geboortedatum">
-                    </label>
-                    <label>
-                        <span class="label-text">Email</span>
-                        <input class="solid" type="text" name="email">
-                    </label>
-                    <label>
-                        <span class="label-text">Adres</span>
-                        <input class="solid" type="text" name="adres">
-                    </label>
-                    <label>
-                        <span class="label-text">Huisnummer</span>
-                        <input class="solid" type="number" name="huisnummer">
-                    </label>
-                    <label>
-                        <span class="label-text">App nr (Optioneel)</span>
-                        <input class="solid" type="number" name="appnummer">
-                    </label>
-                    <label>
-                        <span class="label-text">Postcode</span>
-                        <input class="solid" type="number" name="postcode">
-                    </label>
-                    <label>
-                        <span class="label-text">Telefoonnummer</span>
-                        <input class="solid" type="number" name="telefoonnummer">
-                    </label>
-                    <label>
-                        <span class="text">Kies uw ticket</span><br>
-                        <img class="gif" src="/assets/photos/koopticket.gif" width="200">
-                        <input type="checkbox" id="pukkelpop" name="pukkelpop" value="pukkelpop" />
-                        <label for="pukkelpop">Puppel-Pop</label> <br>
-                        <input type="checkbox" id="tomorrowland" name="tomorrowland" value="tomorrowland" />
-                        <label for="tomorrowland">Tomorrowland</label> <br>
-                        <input type="checkbox" id="laundry_day" name="laundry_day" value="laundry_day" />
-                        <label for="laundry_day">Laundy Day</label>
-                    </label>
-                    <div class="text-center">
-                        <button class="submit" name="radio">Naar de betaling</button>
-                    </div>
-                </form>
+        <!-- Sectie 1 : een Form voor Aankoop Tickets-->
+        <section>
+            <hr>
+            <div class="centercontainer">
+                <div class="container">
+                    <a href="home.html"><img src="/assets/photos/Logo.png" alt="Logo Tfestival"></a>
+                    <h1>Aankoop van tickets</h1>
+                    <p>* De tickets worden niet verkocht aan de minder 18 jaar.</p>
+                    <p>* Producten te bestellen ter plaatse.</p>
+                    <form class="registration-form">
+                        <label class="col-one-half">
+                            <span class="label-text">Familienaam</span>
+                            <input class="solid" type="text" name="firstName">
+                        </label>
+                        <label class="col-one-half">
+                            <span class="label-text">Voornaam</span>
+                            <input class="solid" type="text" name="lastName">
+                        </label>
+                        <label>
+                            <span class="label-text">Geboortedatum</span>
+                            <input class="solid" type="date" name="geboortedatum">
+                        </label>
+                        <label>
+                            <span class="label-text">Email</span>
+                            <input class="solid" type="text" name="email">
+                        </label>
+                        <label>
+                            <span class="label-text">Adres</span>
+                            <input class="solid" type="text" name="adres">
+                        </label>
+                        <label>
+                            <span class="label-text">Huisnummer</span>
+                            <input class="solid" type="number" name="huisnummer">
+                        </label>
+                        <label>
+                            <span class="label-text">App nr (Optioneel)</span>
+                            <input class="solid" type="number" name="appnummer">
+                        </label>
+                        <label>
+                            <span class="label-text">Postcode</span>
+                            <input class="solid" type="number" name="postcode">
+                        </label>
+                        <label>
+                            <span class="label-text">Telefoonnummer</span>
+                            <input class="solid" type="number" name="telefoonnummer">
+                        </label>
+                        <label>
+                            <span class="text">Kies uw ticket</span><br>
+                            <img class="gif" src="/assets/photos/koopticket.gif" width="200">
+                            <input type="checkbox" id="pukkelpop" name="pukkelpop" value="pukkelpop" />
+                            <label for="pukkelpop">Puppel-Pop</label> <br>
+                            <input type="checkbox" id="tomorrowland" name="tomorrowland" value="tomorrowland" />
+                            <label for="tomorrowland">Tomorrowland</label> <br>
+                            <input type="checkbox" id="laundry_day" name="laundry_day" value="laundry_day" />
+                            <label for="laundry_day">Laundy Day</label>
+                        </label>
+                        <div class="text-center">
+                            <button class="submit" name="radio">Naar de betaling</button>
+                        </div>
+                    </form>
+                </div>
             </div>
-        </div>
+        </section>
     </main>
 
-    <div>
-        <footer>
-            <div class="flex">
-                <hr>
-                <div class="flex1">
-                    <a href="www.facebook.com/tfestival" class="fa fa-facebook"></a>
-                    <a href="www.twitter.com/oranjefestival" class="fa fa-twitter"></a>
-                    <a href="www.youtube.com/channel/UCoxcrlsEtLdf3VWBVrJZPSA" class="fa fa-youtube"></a>
-                    <a href="www.snapchat.com/" class="fa fa-snapchat"></a>
-                </div>
-                <hr>
-                <div class="flex2">
-                    <p>&copy;2022 't Festival </p>
-                    <p>FAQ & Contact </p>
-                    <p>Privacy </p>
-                    <p>Ipsum</p>
-                </div>
+    <!-- Footer : 2 Flex's onder mekaar namelijk Social Media & FAQ -->
+    <footer>
+        <div class="flex">
+            <hr>
+            <div class="flex1">
+                <a href="www.facebook.com/tfestival" class="fa fa-facebook"></a>
+                <a href="www.twitter.com/oranjefestival" class="fa fa-twitter"></a>
+                <a href="www.youtube.com/channel/UCoxcrlsEtLdf3VWBVrJZPSA" class="fa fa-youtube"></a>
+                <a href="www.snapchat.com/" class="fa fa-snapchat"></a>
             </div>
-        </footer>
+            <hr>
+            <div class="flex2">
+                <p>&copy;2022 't Festival </p>
+                <p>FAQ & Contact </p>
+                <p>Privacy </p>
+                <p>Ipsum</p>
+            </div>
+        </div>
+    </footer>
     </div>
 
-    <script src="register.js"></script>
+    <script src="/assets/js/register.js"></script>
 </body>
 
 </html>

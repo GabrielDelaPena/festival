@@ -354,7 +354,9 @@ textarea {
 
 }
 
-.contactbackground {}
+.sectie1 {
+    padding-top: 10px;
+}
 
 form {
     padding: 37.5px;
