@@ -1,0 +1,556 @@
+* {
+    margin: 0;
+    padding: 0;
+
+}
+
+body {
+    background-image: url(/assets/photos/contact.gif);
+    background-size: contain;
+}
+
+header {
+    background-color: #00e2ff;
+}
+
+h1 {
+    font-size: 30px;
+    color: white;
+    font-family: 'Inter',
+        sans-serif;
+    font-family: 'Lobster',
+        cursive;
+    font-family: 'Saira Stencil One',
+        cursive;
+    padding-left: 40px;
+}
+
+.container {
+    background-color: black;
+    width: 100%;
+    height: 13vh;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    position: fixed;
+    border-bottom-left-radius: 80px;
+    border-bottom-right-radius: 80px;
+}
+
+
+.navLogo {
+    width: 15%;
+    height: 13vh;
+    background-color: black;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: center;
+    border-bottom-left-radius: 80px;
+}
+
+.navMenu {
+    background-color: black;
+    position: absolute;
+    right: 0;
+    left: 0;
+    width: 65%;
+    margin: 0 auto;
+    transform: translateY(-50%);
+    display: flex;
+    flex-direction: row;
+    align-items: flex-end;
+    justify-content: center;
+    font-family: 'Inter',
+        sans-serif;
+    font-family: 'Lobster',
+        cursive;
+    font-family: 'Saira Stencil One',
+        cursive;
+}
+
+.navMenu a {
+    position: relative;
+    width: 33.333%;
+    display: table-cell;
+    text-align: center;
+    color: #d4d4d4;
+    text-decoration: none;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: bold;
+    transition: 0.2s ease color;
+    font-family: 'Inter',
+        sans-serif;
+    font-family: 'Lobster',
+        cursive;
+    font-family: 'Saira Stencil One',
+        cursive;
+
+}
+
+.navMenu a:before,
+.navMenu a:after {
+    content: "";
+    position: absolute;
+    border-radius: 50%;
+    transform: scale(0);
+    transition: 0.2s ease transform;
+}
+
+.navMenu a:before {
+    top: 0;
+    left: 10px;
+    width: 6px;
+    height: 6px;
+}
+
+.navMenu a:after {
+    top: 5px;
+    left: 18px;
+    width: 4px;
+    height: 4px;
+}
+
+.navMenu a:nth-child(1):before {
+    background-color: yellow;
+}
+
+.navMenu a:nth-child(1):after {
+    background-color: red;
+}
+
+.navMenu a:nth-child(2):before {
+    background-color: #00e2ff;
+}
+
+.navMenu a:nth-child(2):after {
+    background-color: #89ff00;
+}
+
+.navMenu a:nth-child(3):before {
+    background-color: purple;
+}
+
+.navMenu a:nth-child(3):after {
+    background-color: palevioletred;
+}
+
+.navMenu a:nth-child(4):before {
+    background-color: blue;
+}
+
+.navMenu a:nth-child(4):after {
+    background-color: khaki;
+}
+
+.navMenu a:nth-child(5):before {
+    background-color: rgb(255, 136, 0);
+}
+
+.navMenu a:nth-child(5):after {
+    background-color: rgb(212, 8, 25);
+}
+
+#indicator {
+    position: absolute;
+    left: 5%;
+    bottom: 0;
+    width: 30px;
+    height: 3px;
+    background-color: #fff;
+    border-radius: 5px;
+    transition: 0.2s ease left;
+}
+
+.navMenu a:hover {
+    color: #fff;
+}
+
+.navMenu a:hover:before,
+.navMenu a:hover:after {
+    transform: scale(1);
+}
+
+.navMenu a:nth-child(1):hover~#indicator {
+    background: linear-gradient(130deg, yellow, red);
+}
+
+.navMenu a:nth-child(2):hover~#indicator {
+    left: 34%;
+    background: linear-gradient(130deg, #00e2ff, #89ff00);
+}
+
+.navMenu a:nth-child(3):hover~#indicator {
+    left: 70%;
+    background: linear-gradient(130deg, purple, palevioletred);
+}
+
+.navSM {
+    width: 60%;
+    height: 13vh;
+    font-size: 20px;
+    color: #d4d4d4;
+    background-color: black;
+    display: flex;
+    flex-direction: row;
+    align-items: inherit;
+    justify-content: space-around;
+    border-bottom-right-radius: 80px;
+}
+
+.center {
+    background-color: #000000;
+    width: 20%;
+    height: 13vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-bottom-right-radius: 80px;
+}
+
+
+p {
+    text-align: center;
+    color: #ffffff;
+    padding-bottom: 10px;
+}
+
+.navSM a {
+    color: #d4d4d4;
+    text-decoration: none;
+}
+
+footer {
+    background-color: #7a1399;
+    background-image: url(/assets/photos/streetart2.jpg);
+    background-size: cover;
+}
+
+h2 {
+    color: white;
+    font-family: 'Inter',
+        sans-serif;
+    font-family: 'Lobster',
+        cursive;
+    font-family: 'Saira Stencil One',
+        cursive;
+    padding-top: 100px;
+
+}
+
+.sponsors {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    height: 200px;
+    width: 50%;
+}
+
+.sponsor2 {
+    width: 40%;
+    height: 70px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+.flex {
+    padding-top: 100px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: #000000f1;
+}
+
+.tekstsponsor {
+    color: white;
+    font-size: 30px;
+    padding: 100px;
+    text-align: center;
+}
+
+.flex1 {
+    width: 80%;
+    height: 10vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 50px;
+    padding-top: 100px;
+
+}
+
+.flex1 a {
+    color: #d4d4d4;
+    text-decoration: none;
+}
+
+.flex2 {
+    width: 30%;
+    height: 30px;
+    padding-top: 100px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    color: #fff;
+}
+
+hr {
+    width: 20%;
+    border: 0;
+    height: 1px;
+    background-image: linear-gradient(to right, rgba(204, 194, 194, 0), rgba(230, 230, 230, 0.75), rgba(233, 222, 222, 0));
+}
+
+img {
+    padding-bottom: 50px;
+}
+
+@import url(https://fonts.googleapis.com/css?family=Montserrat:400,700);
+
+html {
+    font-family: 'Montserrat', Arial, sans-serif;
+    -ms-text-size-adjust: 100%;
+    -webkit-text-size-adjust: 100%;
+}
+
+button {
+    overflow: visible;
+}
+
+button,
+select {
+    text-transform: none;
+}
+
+button,
+input,
+select,
+textarea {
+    color: #5A5A5A;
+    font: inherit;
+    margin: 0;
+}
+
+input {
+    line-height: normal;
+}
+
+textarea {
+    overflow: auto;
+}
+
+#container1 {
+    border: solid 3px #474544;
+    max-width: 700px;
+    margin: 60px auto;
+    position: static;
+
+}
+
+.contactbackground {}
+
+form {
+    padding: 37.5px;
+    margin: 50px 0;
+}
+
+h1 {
+    color: #474544;
+    font-size: 32px;
+    font-weight: 700;
+    letter-spacing: 7px;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+h2 {
+    font-size: 60px;
+    text-align: center;
+}
+
+.underline {
+    border-bottom: solid 2px #474544;
+    margin: -0.512em auto;
+    width: 80px;
+}
+
+.icon_wrapper {
+    margin: 50px auto 0;
+    width: 100%;
+}
+
+.icon {
+    display: block;
+    fill: #474544;
+    height: 50px;
+    margin: 0 auto;
+    width: 50px;
+}
+
+.email {
+    float: right;
+    width: 45%;
+}
+
+input[type='text'],
+[type='email'],
+select,
+textarea {
+    background: none;
+    border: none;
+    border-bottom: solid 2px #474544;
+    color: #474544;
+    font-size: 1.000em;
+    font-weight: 400;
+    letter-spacing: 1px;
+    margin: 0em 0 1.875em 0;
+    padding: 0 0 0.875em 0;
+    text-transform: uppercase;
+    width: 100%;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -ms-box-sizing: border-box;
+    -o-box-sizing: border-box;
+    box-sizing: border-box;
+    -webkit-transition: all 0.3s;
+    -moz-transition: all 0.3s;
+    -ms-transition: all 0.3s;
+    -o-transition: all 0.3s;
+    transition: all 0.3s;
+}
+
+input[type='text']:focus,
+[type='email']:focus,
+textarea:focus {
+    outline: none;
+    padding: 0 0 0.875em 0;
+}
+
+.message {
+    float: none;
+}
+
+.name {
+    float: left;
+    width: 45%;
+}
+
+select {
+    background: url('https://cdn4.iconfinder.com/data/icons/ionicons/512/icon-ios7-arrow-down-32.png') no-repeat right;
+    outline: none;
+    -moz-appearance: none;
+    -webkit-appearance: none;
+}
+
+select::-ms-expand {
+    display: none;
+}
+
+.subject {
+    width: 100%;
+}
+
+.telephone {
+    width: 100%;
+}
+
+textarea {
+    line-height: 150%;
+    height: 150px;
+    width: 100%;
+}
+
+::-webkit-input-placeholder {
+    color: #474544;
+}
+
+:-moz-placeholder {
+    color: #474544;
+    opacity: 1;
+}
+
+::-moz-placeholder {
+    color: #474544;
+    opacity: 1;
+}
+
+:-ms-input-placeholder {
+    color: #474544;
+}
+
+#form_button {
+    background: none;
+    border: solid 2px #474544;
+    color: #474544;
+    cursor: pointer;
+    font-family: 'Helvetica', Arial, sans-serif;
+    font-size: 0.875em;
+    font-weight: bold;
+    outline: none;
+    padding: 20px 35px;
+    text-transform: uppercase;
+    -webkit-transition: all 0.3s;
+    -moz-transition: all 0.3s;
+    -ms-transition: all 0.3s;
+    -o-transition: all 0.3s;
+    transition: all 0.3s;
+}
+
+#form_button:hover {
+    background: #474544;
+    color: #F2F3EB;
+}
+
+@media screen and (max-width: 768px) {
+    #container1 {
+        margin: 20px auto;
+        width: 95%;
+    }
+}
+
+@media screen and (max-width: 480px) {
+
+
+    .underline {
+        width: 68px;
+    }
+
+    #form_button {
+        padding: 15px 25px;
+    }
+}
+
+@media screen and (max-width: 420px) {
+    h1 {
+        font-size: 18px;
+    }
+
+    .icon {
+        height: 35px;
+        width: 35px;
+    }
+
+    .underline {
+        width: 53px;
+    }
+
+    input[type='text'],
+    [type='email'],
+    select,
+    textarea {
+        font-size: 0.875em;
+    }
+}
+
+p {
+    text-align: center;
+    color: #ffffff;
+    padding-bottom: 10px;
+}
