@@ -39,48 +39,43 @@
                     <form class="registration-form">
                         <label class="col-one-half">
                             <span class="label-text">Familienaam</span>
-                            <input class="solid" type="text" name="firstName">
+                            <input class="solid" type="text" name="firstName" id="firstName">
                         </label>
                         <label class="col-one-half">
                             <span class="label-text">Voornaam</span>
-                            <input class="solid" type="text" name="lastName">
+                            <input class="solid" type="text" name="lastName" id="lastName">
                         </label>
                         <label>
                             <span class="label-text">Geboortedatum</span>
-                            <input class="solid" type="date" name="geboortedatum">
+                            <input class="solid" type="date" name="geboortedatum" id="geboortedatum">
                         </label>
                         <label>
                             <span class="label-text">Email</span>
-                            <input class="solid" type="text" name="email">
+                            <input class="solid" type="text" name="email" id="email">
                         </label>
                         <label>
                             <span class="label-text">Adres</span>
-                            <input class="solid" type="text" name="adres">
+                            <input class="solid" type="text" name="adres" id="adres">
                         </label>
                         <label>
                             <span class="label-text">Huisnummer</span>
-                            <input class="solid" type="number" name="huisnummer">
+                            <input class="solid" type="number" name="huisnummer" id="huisnummer">
                         </label>
                         <label>
                             <span class="label-text">App nr (Optioneel)</span>
-                            <input class="solid" type="number" name="appnummer">
+                            <input class="solid" type="number" name="appnummer" id="appnummer">
                         </label>
                         <label>
                             <span class="label-text">Postcode</span>
-                            <input class="solid" type="number" name="postcode">
-                        </label>
-                        <label>
-                            <span class="label-text">Telefoonnummer</span>
-                            <input class="solid" type="number" name="telefoonnummer">
-                        </label>
+                            <input class="solid" type="number" name="postcode" id="postcode">
                         <label>
                             <span class="text">Kies uw ticket</span><br>
                             <img class="gif" src="/assets/photos/koopticket.gif" width="200">
-                            <input type="checkbox" id="pukkelpop" name="pukkelpop" value="pukkelpop" />
-                            <label for="pukkelpop">Puppel-Pop</label> <br>
-                            <input type="checkbox" id="tomorrowland" name="tomorrowland" value="tomorrowland" />
+                            <input class="ticket" type="checkbox" id="pukkelpop" name="pukkelpop" value="pukkelpop" />
+                            <label for="pukkelpop">Pukkel-Pop</label> <br>
+                            <input class="ticket" type="checkbox" id="tomorrowland" name="tomorrowland" value="tomorrowland" />
                             <label for="tomorrowland">Tomorrowland</label> <br>
-                            <input type="checkbox" id="laundry_day" name="laundry_day" value="laundry_day" />
+                            <input class="ticket" type="checkbox" id="laundry_day" name="laundry_day" value="laundry_day" />
                             <label for="laundry_day">Laundy Day</label>
                         </label>
                         <div class="text-center">
@@ -113,7 +108,7 @@
     </footer>
     </div>
 
-    <script src="/assets/js/register.js"></script>
+    <script type="module" src="/assets/js/register.js"></script>
 </body>
 
 </html>
