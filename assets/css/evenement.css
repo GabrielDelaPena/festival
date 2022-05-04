@@ -233,47 +233,54 @@ p {
 
 
 .sectie1 {
-    background-image: url(/assets/photos/events.jpg);
-    background-size: cover;
+    background-color: black;
     width: 100%;
     height: 900px;
+    top: 500px;
 }
 
 .containers {
     display: flex;
-    flex-direction: row;
-    align-items: center;
+    flex-direction: column;
+    align-items: flex-end;
     justify-content: space-evenly;
     width: 80%;
     height: 800px;
     margin-left: auto;
     margin-right: auto;
-    background-color: #89ff00;
+    background-image: url(/assets/photos/giphyevent.gif);
+    background-size: cover;
+    border-right: 30px;
 
 }
 
 
 .container1 {
     background-color: #ffffff;
-    width: 20%;
-    height: 150px;
-    border-radius: 30px;
+    width: 40%;
+    height: 200px;
+    border-right: 30px;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     text-align: left;
 }
 
+img {
+    border-right: 30px;
+}
+
 
 .container2 {
     background-color: #ffffff;
-    width: 20%;
-    height: 300px;
+    width: 40%;
+    height: 200px;
     border-radius: 30px;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     text-align: left;
+    border-right: 30px;
 }
 
 
