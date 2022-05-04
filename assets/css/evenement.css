@@ -3,6 +3,7 @@
     padding: 0;
 }
 
+/* TITEL EVENEMENT */
 h1 {
     font-size: 30px;
     color: white;
@@ -15,21 +16,20 @@ h1 {
     padding-left: 40px;
 }
 
-h2 {
-    font-size: 60px;
-    text-align: center;
-}
-
+/* WITTE PARAGRAAF IN DE FOOTER OVER SPONSOR */
 p {
     text-align: center;
     color: #ffffff;
     padding-bottom: 10px;
+    padding-left: 20px;
+    padding-right: 20px;
 }
 
+/* ZWARTE MENU NAVIGATION BOVENAAN */
 .container {
     background-color: black;
     width: 100%;
-    height: 13vh;
+    height: auto;
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -37,6 +37,15 @@ p {
     position: fixed;
     border-bottom-left-radius: 80px;
     border-bottom-right-radius: 80px;
+    font-family: -apple-system,
+        BlinkMacSystemFont,
+        "Segoe UI",
+        Roboto,
+        Oxygen-Sans,
+        Ubuntu,
+        Cantarell,
+        "Helvetica Neue",
+        sans-serif;
 }
 
 
@@ -229,13 +238,82 @@ p {
 
 
 
+/* DE TELLER */
+:root {
+    --smaller: .75;
+}
+
+
+.teller {
+    color: #333;
+    margin: 0 auto;
+    text-align: center;
+}
+
+h3 {
+    font-weight: normal;
+    letter-spacing: .125rem;
+    text-transform: uppercase;
+}
+
+li {
+    display: inline-block;
+    font-size: 1.5em;
+    list-style-type: none;
+    padding: 1em;
+    text-transform: uppercase;
+}
+
+li span {
+    display: block;
+    font-size: 4.5rem;
+}
+
+@media all and (max-width: 768px) {
+    h1 {
+        font-size: calc(1.5rem * var(--smaller));
+    }
+
+    li {
+        font-size: calc(1.125rem * var(--smaller));
+    }
+
+    li span {
+        font-size: calc(3.375rem * var(--smaller));
+    }
+}
+
+.emoji {
+    padding-bottom: 10px;
+}
+
+
+
+.datum {
+    font-family: 'Inter',
+        sans-serif;
+    font-family: 'Lobster',
+        cursive;
+    font-family: 'Playfair Display SC',
+        serif;
+    font-family: 'Saira Stencil One',
+        cursive;
+}
+
+
+
+
+
+
+
+
+
 
 
 
 .sectie1 {
     background-color: black;
     width: 100%;
-    height: 900px;
     top: 500px;
 }
 
@@ -249,39 +327,76 @@ p {
     margin-left: auto;
     margin-right: auto;
     background-image: url(/assets/photos/giphyevent.gif);
+    background-color: #7a1399;
     background-size: cover;
-    border-right: 30px;
 
+}
+
+.myButton {
+    box-shadow: inset 0px 1px 7px 6px #ffffff;
+    background: linear-gradient(to bottom, #ededed 5%, #dfdfdf 100%);
+    background-color: #ededed;
+    border-radius: 20px;
+    border: 3px solid #dcdcdc;
+    display: inline-block;
+    cursor: pointer;
+    color: #777777;
+    font-size: 17px;
+    font-weight: bold;
+    padding: 7px 40px;
+    text-decoration: none;
+    font-family: 'Inter',
+        sans-serif;
+    font-family: 'Lobster',
+        cursive;
+    font-family: 'Playfair Display SC',
+        serif;
+    font-family: 'Saira Stencil One',
+        cursive;
+}
+
+.myButton:hover {
+    background: linear-gradient(to bottom, #dfdfdf 5%, #ededed 100%);
+    background-color: #dfdfdf;
+}
+
+.myButton:active {
+    position: relative;
+    top: 1px;
 }
 
 
 .container1 {
-    background-color: #ffffff;
     width: 40%;
     height: 200px;
-    border-right: 30px;
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
+    justify-content: space-evenly;
+    align-items: center;
     text-align: left;
+    background-color: #d4d4d4;
+    border-top-left-radius: 60px;
+    border-bottom-left-radius: 60px;
 }
-
-img {
-    border-right: 30px;
-}
-
 
 .container2 {
-    background-color: #ffffff;
     width: 40%;
     height: 200px;
-    border-radius: 30px;
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
+    justify-content: space-evenly;
     text-align: left;
-    border-right: 30px;
+    align-items: center;
+    background-color: #d4d4d4;
+    border-top-left-radius: 60px;
+    border-bottom-left-radius: 60px;
 }
+
+.container1 img {
+    max-width: 100%;
+    height: auto;
+}
+
 
 
 
@@ -308,7 +423,7 @@ footer {
     background-size: cover;
 }
 
-h2 {
+h1 {
     color: white;
     font-family: 'Inter',
         sans-serif;
@@ -317,7 +432,20 @@ h2 {
     font-family: 'Saira Stencil One',
         cursive;
     padding-top: 100px;
+    font-size: 60px;
+    text-align: center;
+}
 
+h2 {
+    color: white;
+    font-family: 'Inter',
+        sans-serif;
+    font-family: 'Lobster',
+        cursive;
+    font-family: 'Saira Stencil One',
+        cursive;
+    font-size: 50px;
+    text-align: center;
 }
 
 .sponsors {
@@ -339,7 +467,6 @@ h2 {
 }
 
 .flex {
-    padding-top: 100px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -350,7 +477,6 @@ h2 {
 .tekstsponsor {
     color: white;
     font-size: 30px;
-    padding: 100px;
     text-align: center;
 }
 
@@ -362,7 +488,6 @@ h2 {
     justify-content: space-between;
     align-items: center;
     font-size: 50px;
-    padding-top: 100px;
 
 }
 

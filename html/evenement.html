@@ -62,23 +62,40 @@
         <!--Sectie1 : Container Evenement -->
         <section>
             <div class="sectie1">
-                <h2>Evenement</h2>
-                <p>Bekijk hieronder alle komende evenementen van 't Festival ! /// EN TRAVAUX</p>
-
-
-                <div class="containers">
-                    <div class="container1">
-                        <div class="image"><img src="/assets/photos/container1.jpg" alt="" width="250"></div>
-                        <div class="datum">ss <i class="fa-solid fa-calendar-day"></i> 6 april</div>
-                        <div class="button">KOOP TICKETS</div>
+                <h1>Evenement</h1>
+                <div class="teller">
+                    <h3 id="headline">Komend evenement : 't Festival Tervuren 2022</h3>
+                    <div id="countdown">
+                        <ul>
+                            <li><span id="days"></span>Dagen</li>
+                            <li><span id="hours"></span>Uren</li>
+                            <li><span id="minutes"></span>Minuten</li>
+                            <li><span id="seconds"></span>Seconden</li>
+                        </ul>
                     </div>
-                    <div class="container2">
-                        <div class="image"><img src="/assets/photos/container2.jpg" alt="" width="250"></div>
-                        <div class="datum">6 juni</div>
-                        <div class="button">KOOP TICKETS</div>
+                    <div id="content" class="emoji">
+                        <span>🥳</span>
+                        <span>🎉</span>
+                        <span>🔥</span>
                     </div>
 
-                </div>
+                    <div class="containers">
+                        <div class="container1">
+                            <div class="datum"><i class="fa-solid fa-4"></i>📌 't Festival Tervuren - Editie 2022<br>📅
+                                4
+                                -
+                                6
+                                april 2022<br>📍 Leuvensesteenweg, Tervuren</div>
+                            <i class="fa-solid fa-calendar-exclamation"></i><a href="evenementinfo.html"
+                                class="myButton">MEER INFO</a>
+                        </div>
+                        <div class="container2">
+                            <div class="datum">📌 't Festival Aalst - Editie 2023<br>📅 9 - 12 april
+                                2023<br>📍 Leuvensesteenweg,
+                                Aalst</div>
+                            <div class="myButton">NIET BESCHIKBAAR</div>
+                        </div>
+                    </div>
         </section>
     </main>
 
@@ -116,9 +133,7 @@
             </div>
         </div>
     </footer>
-
     <script src="/assets/js/evenement.js"></script>
-
 </body>
 
 </html>
