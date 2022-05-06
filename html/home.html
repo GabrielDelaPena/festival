@@ -19,13 +19,17 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter&family=Lobster&family=Saira+Stencil+One&display=swap"
         rel="stylesheet">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Catamaran:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet"> 
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"
+        integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
     <script src="https://kit.fontawesome.com/7b01b22b23.js" crossorigin="anonymous"></script>
     <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
 </head>
 
 <body>
-    <!-- Header : Container met Navigatie Logo(navLogo) - Navigatie Menu (navMenu) - Navigatie Social Media (navSM) -->
-    <!-- de indicator zijn de drie puntjes bij mouseover op navMenu-->
+
     <header>
         <div class="container">
             <div class="navLogo">
@@ -48,30 +52,24 @@
                     <a href="www.twitter.com/oranjefestival" class="fa fa-twitter"></a>
                     <a href="www.youtube.com/channel/UCoxcrlsEtLdf3VWBVrJZPSA" class="fa fa-youtube"></a>
                     <a href="www.snapchat.com/" class="fa fa-snapchat"></a> |
-                    <a href="login.html"><i id="login_icon" class="far fa-user-circle user_icon"
-                            style="font-size: 36px"></i></a>
+                    <a href=""><i id="login_icon" class="far fa-user-circle user_icon" style="font-size: 36px"></i></a>
                 </div>
             </div>
         </div>
     </header>
 
-    <main>
-        <!-- Sectie 1 : Koop Tickets & Bewegende tekst -->
-        <section>
-            <div class="sectie1">
-                <h2>Een kleine paragraafje om een voorbeeld te geven</h2>
-                <h1>Neem deel aan 't Festival!</h1>
-                <h2>09.06 &rarr; 12.06</h2>
-                <a href="ticket.html"><button>Koop je ticket!</button></a>
-            </div>
-            <div class="slogan">
-                <marquee behavior="scroll" direction="right" scrollamount="20">Lorem Ipsum Ipsududm</marquee>
-            </div>
-        </section>
 
-        <!-- Sectie 2 : Een container voor Button Over Ons -->
+    <div class="backgroundfoto">
+        <h2>Een kleine paragraafje om een voorbeeld te geven</h2>
+        <h1>Neem deel aan 't Festival!</h1>
+        <h2>09.06 &rarr; 12.06</h2>
+        <div class="infohomepage"></div>
+        <a href="ticket.html"><button class="p-button">Koop je ticket!</button></a>
+    </div>
+
+    <main>
         <section>
-            <div class="sectie2">
+            <div class="artikel1">
                 <br><br><br>
                 <div class="flexbox2">
                     <h1>Over ons</h1>
@@ -80,42 +78,36 @@
                         provident, similique sunt in culpa qui officia deserunt mollitia animi, id est laborum et
                         dolorum
                         fuga.</p>
-                    <a href="overons.html"><button>MEER INFO</button></a>
+                    <a href="overons.html"><button >MEER INFO</button></a>
                 </div>
             </div>
-        </section>
 
-        <!-- Sectie 3 : Twee containers naast elkaar voor Button Evenement -->
-        <section>
-            <div class="sectie3">
-                <div class="cont1en2flexen">
-                    <div class="cont1">
-                        <img src="/assets/photos/fotofest.jpg" alt="" width="100%">
-                        <h3>Evenement 1</h3>
-                        <p>At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium
-                            voluptatum
-                            deleniti atque corrupti</p>
-                        <div class="meerinfo">
-                            <p>Meer info</p>
-                        </div>
-                        <marquee behavior="scroll" direction="right" scrollamount="20">SOLD OUT</marquee>
-                    </div>
-                    <div class="cont2">
-                        <img src="/assets/photos/festivaldj.jpg" alt="" width="100%">
-                        <h3>Evenement 2</h3>
-                        <p>At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis
-                        </p>
-                        <div class="meerinfo">
-                            <p>BINNENKORT MEER</p>
-                        </div>
-                        <marquee behavior="scroll" direction="right" scrollamount="20">NOT AVAILABLE</marquee>
-                    </div>
+        </section>
+        <div class="artikel2">
+            <div class="bigcont">
+                <div class="cont1">
+                    <img src="/assets/photos/fotofest.jpg" alt="" width="100%">
+                    <h3>Evenement 1</h3>
+                    <p>At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum
+                        deleniti atque corrupti Lorem, ipsum dolor sit amet consectetur adipisicing elit. Temporibus illum facere impedit corporis eum saepe omnis aliquam suscipit exercitationem molestias enim ipsam voluptates, animi minus dolorem nesciunt, architecto esse officia.</p>
+                    <marquee behavior="scroll" direction="right" scrollamount="20">SOLD OUT</marquee>
+                </div>
+               
+            </div>
+
+            <div class="bigcont">
+                <div class="cont2">
+                    <img src="/assets/photos/festivaldj.jpg" alt="" width="100%">
+                    <h3>Evenement 2</h3>
+                    <p>At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate omnis sed nostrum mollitia distinctio! Sed provident blanditiis facere ipsam explicabo laborum aperiam? Laboriosam earum, qui officia alias amet incidunt deleniti.</p>
+                    <a href="overons.html"><button>MEER INFO</button></a>
+                    <marquee behavior="scroll" direction="right" scrollamount="20">NOT AVAILABLE</marquee>
                 </div>
             </div>
-        </section>
+        </div>
     </main>
 
-    <!--Footer : Flex de Logo boven tekst van sponsor / Drie logo's van sponsors / flex1&2 voor Social Media & FAQ -->
     <footer>
         <div class="flex">
             <img src="/assets/photos/Logo.png" alt="">
@@ -144,12 +136,11 @@
             <div class="flex2">
                 <p>&copy;2022 't Festival </p>
                 <p>FAQ & Contact </p>
-                <p>Privacy </p>
+                <p>Lorem </p>
                 <p>Ipsum</p>
             </div>
         </div>
     </footer>
-
     <script src="../assets/js/home.js"></script>
 </body>
 

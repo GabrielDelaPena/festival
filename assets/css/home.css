@@ -8,36 +8,35 @@ body {
 }
 
 .container {
-    background-color: black;
+    background-color: #000000;
     width: 100%;
-    height: 13vh;
+    height: 12vh;
     display: flex;
     flex-direction: row;
     align-items: center;
     justify-content: space-between;
+    padding-top: 5px;
     position: fixed;
-    border-bottom-left-radius: 80px;
-    border-bottom-right-radius: 80px;
+    
 }
 
 
 .navLogo {
-    width: 15%;
-    height: 13vh;
-    background-color: black;
+    width: 20%;
+    height: 12vh;
+    background-color: rgb(0, 0, 0);
     display: flex;
     flex-direction: row;
-    align-items: center;
+    align-items: flex-start;
     justify-content: center;
-    border-bottom-left-radius: 80px;
 }
 
 .navMenu {
-    background-color: black;
+    background-color: #000000;
     position: absolute;
     right: 0;
     left: 0;
-    width: 65%;
+    width: 60%;
     margin: 0 auto;
     transform: translateY(-50%);
     display: flex;
@@ -169,26 +168,23 @@ body {
 }
 
 .navSM {
-    width: 60%;
-    height: 13vh;
-    font-size: 20px;
+    width: 10%;
+    height: 10vh;
+    font-size: 30px;
     color: #d4d4d4;
-    background-color: black;
+    background-color: #000000;
     display: flex;
     flex-direction: row;
     align-items: inherit;
     justify-content: space-around;
-    border-bottom-right-radius: 80px;
 }
 
 .center {
     background-color: #000000;
     width: 20%;
-    height: 13vh;
     display: flex;
     align-items: center;
     justify-content: center;
-    border-bottom-right-radius: 80px;
 }
 
 p {
@@ -202,7 +198,7 @@ p {
     text-decoration: none;
 }
 
-.sectie1 {
+.backgroundfoto {
     background-image: url(/assets/photos/giphy3.gif);
     background-size: cover;
     width: 100%;
@@ -213,20 +209,8 @@ p {
     align-items: center;
 }
 
-
-
-.slogan {
-    width: 100%;
-    height: 120px;
-    background-color: #000000;
-    color: #ffffff;
-    font-size: 80px;
-    font-family: 'Inter',
-        sans-serif;
-    font-family: 'Lobster',
-        cursive;
-    font-family: 'Saira Stencil One',
-        cursive;
+.infohomepage {
+    margin-left: 50px;
 }
 
 h1 {
@@ -257,8 +241,8 @@ h1 {
     padding-bottom: 140px;
 }
 
-button,
-button::after {
+.p-button,
+.p-button::after {
     position: static;
     width: 380px;
     height: 86px;
@@ -273,12 +257,7 @@ button::after {
     outline: transparent;
 }
 
-marquee {
-    height: 300px;
-    position: unset;
-}
-
-button::after {
+.p-button::after {
     --slice-0: inset(50% 50% 50% 50%);
     --slice-1: inset(80% -6px 0 0);
     --slice-2: inset(50% -6px 30% 0);
@@ -298,7 +277,7 @@ button::after {
     clip-path: var(--slice-0);
 }
 
-button:hover::after {
+.p-button:hover::after {
     animation: 1s glitch;
     animation-timing-function: steps(2, end);
 }
@@ -360,7 +339,7 @@ button:hover::after {
     }
 }
 
-.sectie2 {
+.artikel1 {
     width: 100%;
     height: 900px;
     background-image: url(/assets/photos/festivaldj.jpg);
@@ -380,9 +359,11 @@ button:hover::after {
     color: white;
     font-size: 25px;
     padding: 50px;
+    font-family: 'Catamaran', sans-serif;
+    font-size: 15px;
 }
 
-.sectie3 {
+.artikel2 {
     background-image: url(/assets/photos/eventshomepage.jpg);
     background-size: cover;
     height: 1000px;
@@ -390,7 +371,7 @@ button:hover::after {
     color: white;
 }
 
-.cont1en2flexen {
+.bigcont {
     width: 100%;
     height: 1000px;
     display: flex;
@@ -399,6 +380,11 @@ button:hover::after {
     align-items: center;
 }
 
+marquee {
+    width: 100%;
+    height: 30px;
+    position: static;
+}
 
 .cont1 {
     width: 25%;
@@ -433,7 +419,7 @@ button:hover::after {
 
 footer {
     background-color: #7a1399;
-    background-image: url(./streetart2.jpg);
+    background-image: url(/assets/photos/streetart2.jpg);
     background-size: cover;
 }
 
@@ -517,4 +503,245 @@ hr {
     border: 0;
     height: 1px;
     background-image: linear-gradient(to right, rgba(204, 194, 194, 0), rgba(230, 230, 230, 0.75), rgba(233, 222, 222, 0));
+}
+
+@media (min-width: 768px) and (max-width: 1024px){
+    .backgroundfoto h2{
+        color: green;
+    }
+}
+
+@media (max-width: 480px) {
+
+    .backgroundfoto{
+        text-align: center;
+        width: 100%;
+        height: 700px;
+        
+    }
+    .backgroundfoto h2 {
+        font-size: 1em;
+        margin: 0;
+    }
+
+    .backgroundfoto h1 {
+        font-size: 3em;
+    }
+
+    .backgroundfoto h2:nth-child(3) {
+        font-size: 1.3em;
+        margin: 0;
+    }
+
+    .artikel1 { 
+
+    text-align: center;
+    width: 100%;
+    height: 700px;
+    background-image: url(/assets/photos/festivaldj.jpg);
+    background-size: cover;
+    }
+
+    .artikel1 h1{
+        font-size: 3em;
+        text-align: center;
+        
+    }
+    
+
+    .flexbox2 {
+    border-radius: 20px;
+    width: 90%;
+    height: 500px;
+    margin: auto;
+    background-color: #000000be;
+    }
+
+   .flexbox2 button{
+    width: 80%;
+    margin: auto;
+    text-align: center;
+    cursor: pointer;
+    font-size:24px;
+    
+   }
+
+   .flexbox2 button{
+    font-family: 'Saira Stencil One';
+    position: relative;
+    background-color: #ffffff;
+    border: none;
+    padding: 20px;
+    width: 200px;
+    text-align: center;
+    -webkit-transition-duration: 0.4s; /* Safari */
+    transition-duration: 0.4s;
+    text-decoration: none;
+    overflow: hidden;
+}
+
+.flexbox2 button:hover{
+   background:#fff;
+   box-shadow:0px 2px 10px 5px #97B1BF;
+   color:#000;
+}
+
+.flexbox2 button:after {
+    content: "";
+    background: #ffffff;
+    display: block;
+    position: absolute;
+    padding-top: 300%;
+    padding-left: 350%;
+    margin-left: -20px !important;
+    margin-top: -120%;
+    opacity: 0;
+    transition: all 0.8s
+}
+
+.flexbox2 button:active:after {
+    padding: 0;
+    margin: 0;
+    opacity: 1;
+    transition: 0s
+}
+    .artikel2{
+        height: 300vh;
+        width: 100%;
+        padding-top: 3em;
+    }
+
+    .bigcont {
+        width: 100%;
+        height: 1000vh;
+        display: inline;
+        flex-direction: row;
+        justify-content: space-evenly;
+        align-items: center;
+    }
+
+    .cont1, .cont2{
+        border-bottom-left-radius: 20px;
+        border-bottom-right-radius: 20px;
+        width: 80%;
+        margin: auto;
+        padding-bottom: 5em;
+    }
+    .cont1 img, .cont2 img{
+
+        background-image:
+        linear-gradient(to bottom, rgba(245, 246, 252, 0.52), rgba(117, 19, 93, 0.73)),
+        url('../photos/festivaldj.jpg');
+        border-top-left-radius: 20px;
+        border-top-right-radius: 20px;
+        
+    }
+
+    .cont1 h3, .cont2 h3{
+        margin-top: 2em;
+        font-family: 'Saira Stencil One',
+        cursive;
+    }
+
+    .cont1 p, .cont2 p{
+        padding: 3em;
+        width: 80%;
+        font-size: 15px;
+        font-family: 'Catamaran', sans-serif;
+        margin-bottom: 5em;
+    }
+
+    .bigcont button{
+        width: 80%;
+        margin: auto;
+        text-align: center;
+        cursor: pointer;
+        font-size:24px;
+        
+       }
+    
+    .bigcont button{
+        margin-top: 3em;
+        font-family: 'Saira Stencil One';
+        position: relative;
+        background-color: #ffffff;
+        border: none;
+        padding: 20px;
+        width: 200px;
+        text-align: center;
+        -webkit-transition-duration: 0.4s; /* Safari */
+        transition-duration: 0.4s;
+        text-decoration: none;
+        overflow: hidden;
+    }
+    
+    .bigcont button:hover{
+       background:#fff;
+       box-shadow:0px 2px 10px 5px #97B1BF;
+       color:#000;
+    }
+    
+    .bigcont button:after {
+        content: "";
+        background: #ffffff;
+        display: block;
+        position: absolute;
+        padding-top: 300%;
+        padding-left: 350%;
+        margin-left: -20px !important;
+        margin-top: -120%;
+        opacity: 0;
+        transition: all 0.8s
+    }
+    
+    .bigcont button:active:after {
+        padding: 0;
+        margin: 0;
+        opacity: 1;
+        transition: 0s
+    }
+    
+
+    .tekstsponsor p{
+        font-size: 15px;
+        font-family: 'Catamaran', sans-serif;
+    }
+
+    .sponsors {
+    display: inline;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    height: 500px;
+    width: 50%;
+
+}
+
+    .sponsor1, .sponsor2 {
+    margin: auto;
+    width: 80%;
+    
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    }
+
+    .sponsor1{
+        margin-bottom: 6em;
+    }
+
+    .flex2 {
+        font-family: 'Catamaran', sans-serif;
+        width: 30%;
+        margin: auto;
+        height: 30px;
+        padding-top: 100px;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        align-items: center;
+        color: #fff;
+    }
+   
 }
