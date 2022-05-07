@@ -26,8 +26,7 @@
     <div class="wrapper">
         <div class="header">
             <div class="logo">
-                <img src="/FrontEnd/assets/images/logo2fest.JPG" alt="logo van t'Festival (grijs en groen)"
-                    width="100px">
+                <img src="assets/img/logo2fest.JPG" alt="logo van t'Festival (grijs en groen)" width="100px">
             </div>
             <div class="head">
                 <h1 class="title">E-TICKET t'FESTIVAL</h1>
@@ -43,15 +42,19 @@
                     <br>
                     <br>
                     Dit is jouw festivalticket voor 't Festival 2022.
-                    We wensen je alvast veel plezier!
-                    <br>
                     Vergeet niet het ticket te bewaren en deze bij ingang aan de stewards te tonen.
                     <br>
-                    Zonder vertoon van ticket kan u niet binnen
+                    Zonder vertoon van ticket kan u niet binnen!
+                    Per persoon kan slechts één ticket worden gescand, alle
+                    begeleiders dienen een eigen ticket te hebben. We wensen je alvast veel plezier!
                     <br>
                     <br>
                     E-mail: kevin.tfestival@gmail.be - Website: www.tfestival.be
                 </p>
+            </div>
+            <div class="img_con">
+                <img src="assets/img/antoine-j-r3XvSBEQQLo-unsplash.jpg" alt="logo van t'Festival (grijs en groen)"
+                    style="height: 150px; width: 735px;">
             </div>
         </div>
     </div>
@@ -59,14 +62,14 @@
         <div class="main_02">
             <div class="part2">
                 <div class="cont1">
-                    <h2 class="ticket">WAVE 1 - FULL PASS</h2>
+                    <h2 class="ticket" id="type">WAVE 1 - FULL PASS</h2>
                 </div>
                 <div class="flex">
                     <div class="cont2">
-                        <p class="gen_info">Naam: Mia Chan</p>
-                        <p class="gen_info">Type: wave 1</p>
-                        <p class="gen_info">ID: 00001</p>
-                        <p class="gen_info">Datum: 27/02/2022</p>
+                        <p class="gen_info">Naam: <span id="name">Name</span></p>
+                        <p class="gen_info">Type: <span id="type">Type</span></p>
+                        <p class="gen_info">ID: <span id="ticketId">Id</span></p>
+                        <p class="gen_info">Datum: <span id="date">Date</span></p>
                     </div>
                     <div class="cont3" id="generator">
                         <input type="text" spellcheck="false" id="text" value="https://google.com" />
@@ -76,39 +79,27 @@
             </div>
         </div>
     </div>
-    <div class="wrapper2">
+    <div class="wrapperfooter">
         <div class="footer">
             <div class="sponsors">
                 <div class="sp1">
-                    <img src="/FrontEnd/assets/images/ss7.png" alt="" width="50px">
+                    <img src="assets/img/proximus.png" alt="" width="150px">
                 </div>
                 <div class="sp2">
-                    <img src="/FrontEnd/assets/images/ss1.png" alt="" width="50px">
+                    <img src="assets/img/redbullogo.png" alt="" width="150px">
                 </div>
                 <div class="sp3">
-                    <img src="/FrontEnd/assets/images/ss2.png" alt="" width="50px">
-                </div>
-                <div class="sp4">
-                    <img src="/FrontEnd/assets/images/ss3.png" alt="" width="50px">
-                </div>
-                <div class="sp5">
-                    <img src="/FrontEnd/assets/images/ss4.png" alt="" width="50px">
-                </div>
-                <div class="sp6">
-                    <img src="/FrontEnd/assets/images/ss5.png" alt="" width="50px">
-                </div>
-                <div class="sp7">
-                    <img src="/FrontEnd/assets/images/ss6.png" alt="" width="50px">
+                    <img src="assets/img/reebok.png" alt="" width="150px">
                 </div>
             </div>
         </div>
     </div>
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/qrcodejs/1.0.0/qrcode.min.js"></script>
-    <script src="main.js"></script>
+    <script src="./assets/js/main.js"></script>
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.10.1/html2pdf.bundle.min.js"></script>
-    <script src="index.js"></script>
+    <script src="./assets/js/index.js"></script>
 </body>
 
 </html>
