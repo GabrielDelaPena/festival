@@ -36,7 +36,7 @@
                     <h1>Aankoop van tickets</h1>
                     <p>* De tickets worden niet verkocht aan de minder 18 jaar.</p>
                     <p>* Producten te bestellen ter plaatse.</p>
-                    <form class="registration-form">
+                    <form class="registration-form" method="POST">
                         <label class="col-one-half">
                             <span class="label-text">Familienaam</span>
                             <input class="solid" type="text" name="firstName" id="firstName">
@@ -51,7 +51,7 @@
                         </label>
                         <label>
                             <span class="label-text">Email</span>
-                            <input class="solid" type="text" name="email" id="email">
+                            <input class="solid" type="text" name="email" id="email" required>
                         </label>
                         <label>
                             <span class="label-text">Adres</span>
@@ -71,12 +71,20 @@
                         <label>
                             <span class="text">Kies uw ticket</span><br>
                             <img class="gif" src="/assets/photos/koopticket.gif" width="200">
-                            <input class="ticket" type="checkbox" id="pukkelpop" name="pukkelpop" value="pukkelpop" />
+                        
+                            <!-- <input class="ticket" type="radio" id="pukkelpop" name="pukkelpop" value="pukkelpop" />
                             <label for="pukkelpop">Pukkel-Pop</label> <br>
-                            <input class="ticket" type="checkbox" id="tomorrowland" name="tomorrowland" value="tomorrowland" />
+                            <input class="ticket" type="radio" id="tomorrowland" name="tomorrowland" value="tomorrowland" />
                             <label for="tomorrowland">Tomorrowland</label> <br>
-                            <input class="ticket" type="checkbox" id="laundry_day" name="laundry_day" value="laundry_day" />
-                            <label for="laundry_day">Laundy Day</label>
+                            <input class="ticket" type="radio" id="laundry_day" name="laundry_day" value="laundry_day" />
+                            <label for="laundry_day">Laundy Day</label> -->
+                            <input type="radio" id="pukkelpop" name="ticket" value="pukkelpop">
+                            <label for="pukkelpop">pukkelpop</label><br>
+                            <input type="radio" id="tomorrowland" name="ticket" value="tomorrowland">
+                            <label for="tomorrowland">tomorrowland</label><br>
+                            <input type="radio" id="laundry_day" name="ticket" value="laundry_day">
+                            <label for="laundry_day">laundry_day</label>
+                          
                         </label>
                         <div class="text-center">
                             <button class="submit" name="radio">Naar de betaling</button>
@@ -107,7 +115,7 @@
         </div>
     </footer>
     </div>
-
+    <script src="https://smtpjs.com/v3/smtp.js"></script>
     <script type="module" src="/assets/js/register.js"></script>
 </body>
 

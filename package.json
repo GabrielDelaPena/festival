@@ -1,0 +1,22 @@
+{
+  "name": "project-tfestival",
+  "version": "1.0.0",
+  "description": "Dit is een project in het kader van het vak Trends II. Het is de bedoeling een functionerende site te maken voor het evenement t'Festival.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/GabrielDelaPena/festival.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/GabrielDelaPena/festival/issues"
+  },
+  "homepage": "https://github.com/GabrielDelaPena/festival#readme",
+  "dependencies": {
+    "firebase": "^9.7.0"
+  }
+}
