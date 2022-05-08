@@ -1,3 +1,4 @@
+// QR-code (momenteel alleen eentje)
 const qrcode = document.getElementById("qrcode");
 const textInput = document.getElementById("text");
 
@@ -8,3 +9,6 @@ textInput.oninput = (e) => {
 };
 
 qr.makeCode(textInput.value.trim());
+
+
+// Queries van firebase
