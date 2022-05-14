@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>
+        t'Festival Admin
+    </title>
+    <link rel="shortcut icon" href="../images/Logo.png" type="image/png">
+    <!-- GOOGLE FONT -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+        rel="stylesheet">
+    <!-- BOXICONS -->
+    <link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>
+    <!-- APP CSS -->
+    <link rel="stylesheet" href="../css/app.css">
+    <link rel="stylesheet" href="../css/grid.css">
+
+    <!-- COUNT API-->
+    <script async
+        src="https://api.countapi.xyz/hit/oumaimazerouali.be/7dd19812-d3b3-4039-a023-d511e328879a?callback=websiteVisits">
+    </script>
+</head>
+
+<body>
+
+    <!-- SIDEBAR -->
+    <div class="sidebar">
+        <div class="sidebar-logo">
+            <img src="../images/Logo.png" alt="t'Festival logo">
+            <div style="margin-left: 10px;">
+                t'Festival
+            </div>
+            <div class="sidebar-close" id="sidebar-close">
+                <i class='bx bx-left-arrow-alt'></i>
+            </div>
+        </div>
+        <div class="sidebar-user">
+            <div class="sidebar-user-info">
+                <!-- Nog JS nodig-->
+                <div class="sidebar-user-name" id="naam">Hier komt de naam </div>
+            </div>
+            <button class="btn btn-outline">
+                <i class='bx bx-log-out bx-flip-horizontal'></i>
+            </button>
+        </div>
+
+        <!-- SIDEBAR MENU -->
+        <ul class="sidebar-menu">
+            <li>
+                <a href="/index.html">
+                    <i class='bx bx-home'></i>
+                    <span>dashboard</span>
+                </a>
+            </li>
+            <li>
+                <a href="sales.html">
+                    <i class='bx bx-shopping-bag'></i>
+                    <span>sales</span>
+                </a>
+            </li>
+            <li>
+                <a href="tickets.html">
+                    <i class='bx bx-mail-send'></i>
+                    <span>tickets</span>
+                </a>
+            </li>
+            <li>
+                <a href="analytics.html">
+                    <i class='bx bx-chart'></i>
+                    <span>analytics</span>
+                </a>
+            </li>
+            <li>
+                <a href="account.html">
+                    <i class='bx bx-user-circle'></i>
+                    <span>account</span>
+                </a>
+            </li>
+            <li>
+                <a href="mail.html">
+                    <i class='bx bx-mail-send'></i>
+                    <span>mail</span>
+                </a>
+            </li>
+            <div class="space"></div>
+            <li>
+                <a href="settings.html" class="active">
+                    <i class='bx bx-cog'></i>
+                    <span>settings</span>
+                </a>
+            </li>
+
+            <!-- Darkmode -->
+            <li>
+                <a href="#" class="darkmode-toggle" id="darkmode-toggle">
+                    darkmode
+                    <span class="darkmode-switch"></span>
+                </a>
+            </li>
+        </ul>
+        <!-- END SIDEBAR MENU -->
+    </div>
+    <!-- END SIDEBAR -->
+
+    <!-- MAIN CONTENT -->
+    <div class="main">
+        <div class="main-header">
+            <div class="mobile-toggle" id="mobile-toggle">
+                <i class='bx bx-menu-alt-right'></i>
+            </div>
+            <div class="main-title">
+                Settings
+            </div>
+        </div>
+        <div class="main-content">
+            <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.1/css/all.min.css"
+                integrity="sha256-2XFplPlrFClt0bIdPgpz8H7ojnk10H69xRqd9+uTShA=" crossorigin="anonymous" />
+
+            <div class="container">
+                <div class="row">
+                    <div class="col-12">
+                        <h3>Recent Activity</h5>
+                            <table class="table border bg-white">
+                                <thead>
+                                    <tr>
+                                        <th>Device</th>
+                                        <th>Location</th>
+                                        <th>IP</th>
+                                        <th>Time</th>
+                                        <th></th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <th scope="col"><i class="fe fe-globe fe-12 text-muted mr-2"></i>Chrome -
+                                            Windows 10</th>
+                                        <td>Paris, France</td>
+                                        <td>192.168.1.10</td>
+                                        <td>Apr 24, 2019</td>
+                                        <td><a hreff="#" class="text-muted"><i class="fe fe-x"></i></a></td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="col"><i class="fe fe-smartphone fe-12 text-muted mr-2"></i>App - Mac
+                                            OS</th>
+                                        <td>Newyork, USA</td>
+                                        <td>10.0.0.10</td>
+                                        <td>Apr 24, 2019</td>
+                                        <td><a hreff="#" class="text-muted"><i class="fe fe-x"></i></a></td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="col"><i class="fe fe-globe fe-12 text-muted mr-2"></i>Chrome - iOS
+                                        </th>
+                                        <td>London, UK</td>
+                                        <td>255.255.255.0</td>
+                                        <td>Apr 24, 2019</td>
+                                        <td><a hreff="#" class="text-muted"><i class="fe fe-x"></i></a></td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- END MAIN CONTENT -->
+
+    <div class="overlay"></div>
+
+    <!-- SCRIPT -->
+    <script src="https://cdn.jsdelivr.net/npm/apexcharts"></script>
+    <script src="assets/js/app.js"></script>
+</body>
+
+</html>
