@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Version 1</title>
+    <link rel="stylesheet" href="../assets/css/style.css" />
+    <link
+      rel="icon"
+      href="/FrontEnd/assets/images/logo2fest.JPG"
+      type="image/x-icon"
+    />
+
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=League+Gothic&family=Roboto&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@500&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Raleway:wght@300&family=Smooch+Sans&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+
+  <body id="pdf-file">
+    <div class="wrapper">
+      <div class="header">
+        <div class="logo">
+          <img
+            src="../img/logo2fest.JPG"
+            alt="logo van t'Festival (grijs en groen)"
+            width="100px"
+          />
+        </div>
+        <div class="head">
+          <h1 class="title">E-TICKET t'FESTIVAL</h1>
+          <p class="subtitle"><b>Don't forget to bring this with you</b></p>
+        </div>
+      </div>
+    </div>
+    <div class="wrapper2">
+      <div class="main_01">
+        <div class="part1">
+          <p class="info">
+            Beste festivalganger,
+            <br />
+            <br />
+            Dit is jouw festivalticket voor 't Festival 2022. Vergeet niet het
+            ticket te bewaren en deze bij ingang aan de stewards te tonen.
+            <br />
+            Zonder vertoon van ticket kan u niet binnen! Per persoon kan slechts
+            één ticket worden gescand, alle begeleiders dienen een eigen ticket
+            te hebben. We wensen je alvast veel plezier!
+            <br />
+            <br />
+            E-mail: kevin.tfestival@gmail.be - Website: www.tfestival.be
+          </p>
+        </div>
+        <div class="img_con">
+          <img
+            src="../img/antoine-j-r3XvSBEQQLo-unsplash.jpg"
+            alt="logo van t'Festival (grijs en groen)"
+            style="height: 150px; width: 735px"
+          />
+        </div>
+      </div>
+    </div>
+    <div class="wrappermain">
+      <div class="main_02">
+        <div class="part2">
+          <div class="cont1">
+            <h2 class="ticket" id="type">WAVE 1 - FULL PASS</h2>
+          </div>
+          <div class="flex">
+            <div class="cont2">
+              <p class="gen_info">Naam: <span id="name">Name</span></p>
+              <p class="gen_info">Type: <span id="type">Type</span></p>
+              <p class="gen_info">ID: <span id="ticketId">Id</span></p>
+              <p class="gen_info">Datum: <span id="date">Date</span></p>
+            </div>
+            <div class="cont3" id="generator">
+              <input
+                type="text"
+                spellcheck="false"
+                id="text"
+                value="https://google.com"
+              />
+              <div id="qrcode" class="qrcode"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="wrapperfooter">
+      <div class="footer">
+        <div class="sponsors">
+          <div class="sp1">
+            <img src="../img/proximus.png" alt="" width="150px" />
+          </div>
+          <div class="sp2">
+            <img src="../img/redbullogo.png" alt="" width="150px" />
+          </div>
+          <div class="sp3">
+            <img src="../img/reebok.png" alt="" width="150px" />
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="../assets/js/register.js"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/qrcodejs/1.0.0/qrcode.min.js"></script>
+    <script src="../assets/js/main.js"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.10.1/html2pdf.bundle.min.js"></script>
+    <script src="../assets/js/index.js"></script>
+
+    <!-- <script src="../assets/js/register.js"></script> -->
+  </body>
+</html>

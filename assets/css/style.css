@@ -1,0 +1,145 @@
+/* font-family: 'League Gothic', sans-serif;
+font-family: 'Roboto', sans-serif; 
+font-family: 'Raleway', sans-serif;
+font-family: 'Smooch Sans', sans-serif; */
+
+* {
+    margin: 0 auto;
+    padding: 0;
+}
+
+/* First breakpoint: 576px */
+
+/* Header */
+.wrapper {
+    margin-right: 20px;
+    margin-left: 20px;
+    margin-top: 30px;
+
+    max-width: 960px;
+
+    padding-right: 10px;
+    padding-left: 10px;
+}
+
+.header {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.logo {
+    width: 100px;
+}
+
+.header {
+    background-color: #f4f4f4;
+}
+
+.title {
+    font-family: 'League Gothic', sans-serif;
+    font-size: 40px;
+
+    text-align: center;
+
+}
+
+.subtitle {
+    font-family: 'Noto Sans JP', sans-serif;
+    font-size: 20px;
+}
+
+.img_con {
+    margin-top: 50px;
+
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+/* Main */
+.wrapper2 {
+    margin-right: 20px;
+    margin-left: 20px;
+    margin-top: 30px;
+
+    max-width: 960px;
+
+    padding-right: 10px;
+    padding-left: 10px;
+}
+
+.wrappermain {
+    margin-right: 20px;
+    margin-left: 20px;
+    margin-top: 50px;
+
+    max-width: 960px;
+
+    padding-right: 10px;
+    padding-left: 10px;
+}
+
+.info {
+    font-family: 'Smooch Sans', sans-serif;
+    font-family: 20px;
+}
+
+.cont1 {
+    border: solid 1px black;
+}
+
+.ticket {
+    text-align: center;
+
+    font-family: 'League Gothic', sans-serif;
+    font-size: 30px;
+}
+
+.flex {
+    display: flex;
+}
+
+.cont2 {
+    border: solid 1px black;
+
+    margin-left: -0px;
+    width: 367px;
+}
+
+.gen_info {
+    font-family: 'Smooch Sans', sans-serif;
+    font-size: 20px;
+
+    margin-left: 10px;
+    margin-top: 20px;
+}
+
+.cont3 {
+    border: solid 1px black;
+
+    margin-right: -0px;
+    width: 367px;
+}
+
+input[type=text] {
+    display: none;
+}
+
+/* Footer */
+.wrapperfooter {
+    margin-right: 20px;
+    margin-left: 20px;
+    margin-top: 50px;
+
+    max-width: 960px;
+
+    padding-right: 10px;
+    padding-left: 10px;
+}
+
+.sponsors {
+    display: flex;
+    align-items: center;
+
+    margin-top: 100px;
+}

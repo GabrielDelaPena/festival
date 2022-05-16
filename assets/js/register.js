@@ -44,6 +44,17 @@ getDownloadURL(
   console.log(url);
 });
 
+function generatePDF() {
+  const element = document.getElementById("pdf-file");
+  html2pdf(element);
+  console.log("test");
+}
+
+// function generatePDF() {
+//   const element = document.getElementById("pdf-file");
+//   html2pdf(element).save();
+// }
+
 function sendEmail(name, email, ticket) {
   Email.send({
     Host: "smtp.gmail.com",
@@ -72,8 +83,10 @@ function sendEmail(name, email, ticket) {
   });
 }
 
-btn_submit.addEventListener("click", (e) => {
-  e.preventDefault();
+function submitHandler() {
+  // const element = document.getElementById("pdf-file");
+  // html2pdf(element);
+
   const checkbox_ticket = document.querySelector(
     'input[name="ticket"]:checked'
   );
@@ -90,9 +103,62 @@ btn_submit.addEventListener("click", (e) => {
     return alert("Sommige velden zijn niet/verkeerd ingevuld.");
   }
 
-  if(!checkbox_ticket) {
-    return alert("Kiez een ticket voor het festival.")
+  if (!checkbox_ticket) {
+    return alert("Kiez een ticket voor het festival.");
   }
+
+  const new_client = {
+    voornaam: input_first_name.value,
+    familienaam: input_last_name.value,
+    email: input_email.value,
+    geboorte: input_geboorte.value,
+    adres: input_adres.value,
+    huis_nr: input_huis_nr.value,
+    app_nr: input_app_nr.value,
+    postcode: input_postcode.value,
+    ticket: checkbox_ticket.value,
+    ticket_url: `https://firebasestorage.googleapis.com/v0/b/festival-10290.appspot.com/o/${checkbox_ticket.value}.pdf?alt=media&token=c1b10230-95af-42b7-9ea8-c5837a886e08`,
+  };
+
+  // addDoc(collection(db, "clients"), {
+  //   voornaam: input_first_name.value,
+  //   familienaam: input_last_name.value,
+  //   email: input_email.value,
+  //   geboorte: input_geboorte.value,
+  //   adres: input_adres.value,
+  //   huis_nr: input_huis_nr.value,
+  //   app_nr: input_app_nr.value,
+  //   postcode: input_postcode.value,
+  //   ticket: checkbox_ticket.value,
+  //   ticket_url: `https://firebasestorage.googleapis.com/v0/b/festival-10290.appspot.com/o/${checkbox_ticket.value}.pdf?alt=media&token=c1b10230-95af-42b7-9ea8-c5837a886e08`,
+  // });
+
+  console.log(new_client);
+  sendEmail(input_last_name.value, input_email.value, checkbox_ticket.value);
+  document.querySelector(".registration-form").reset();
+}
+
+btn_submit.addEventListener("click", (e) => {
+  e.preventDefault();
+  // const checkbox_ticket = document.querySelector(
+  //   'input[name="ticket"]:checked'
+  // );
+
+  // if (
+  //   input_first_name.value === "" ||
+  //   input_last_name.value === "" ||
+  //   input_email.value === "" ||
+  //   input_geboorte.value === "" ||
+  //   input_adres.value === "" ||
+  //   input_huis_nr.value === "" ||
+  //   input_postcode.value === ""
+  // ) {
+  //   return alert("Sommige velden zijn niet/verkeerd ingevuld.");
+  // }
+
+  // if(!checkbox_ticket) {
+  //   return alert("Kiez een ticket voor het festival.")
+  // }
 
   // const new_client = {
   //   voornaam: input_first_name.value,
@@ -107,20 +173,25 @@ btn_submit.addEventListener("click", (e) => {
   //   ticket_url: `https://firebasestorage.googleapis.com/v0/b/festival-10290.appspot.com/o/${checkbox_ticket.value}.pdf?alt=media&token=c1b10230-95af-42b7-9ea8-c5837a886e08`,
   // };
 
-  addDoc(collection(db, "clients"), {
-    voornaam: input_first_name.value,
-    familienaam: input_last_name.value,
-    email: input_email.value,
-    geboorte: input_geboorte.value,
-    adres: input_adres.value,
-    huis_nr: input_huis_nr.value,
-    app_nr: input_app_nr.value,
-    postcode: input_postcode.value,
-    ticket: checkbox_ticket.value,
-    ticket_url: `https://firebasestorage.googleapis.com/v0/b/festival-10290.appspot.com/o/${checkbox_ticket.value}.pdf?alt=media&token=c1b10230-95af-42b7-9ea8-c5837a886e08`,
-  });
+  // // addDoc(collection(db, "clients"), {
+  // //   voornaam: input_first_name.value,
+  // //   familienaam: input_last_name.value,
+  // //   email: input_email.value,
+  // //   geboorte: input_geboorte.value,
+  // //   adres: input_adres.value,
+  // //   huis_nr: input_huis_nr.value,
+  // //   app_nr: input_app_nr.value,
+  // //   postcode: input_postcode.value,
+  // //   ticket: checkbox_ticket.value,
+  // //   ticket_url: `https://firebasestorage.googleapis.com/v0/b/festival-10290.appspot.com/o/${checkbox_ticket.value}.pdf?alt=media&token=c1b10230-95af-42b7-9ea8-c5837a886e08`,
+  // // });
 
   // console.log(new_client);
-  sendEmail(input_last_name.value, input_email.value, checkbox_ticket.value);
-  document.querySelector(".registration-form").reset();
+  // sendEmail(input_last_name.value, input_email.value, checkbox_ticket.value);
+  // document.querySelector(".registration-form").reset();
+
+  // generatePDF();
+  generatePDF();
 });
+
+console.log("pdf")
