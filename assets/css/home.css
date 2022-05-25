@@ -241,6 +241,50 @@ h1 {
     padding-bottom: 140px;
 }
 
+.artikel1 button{
+    display: block;
+    width: 20%;
+    height: 15%;
+    margin: auto;
+    text-align: center;
+    cursor: pointer;
+    font-size:24px;
+    font-family: 'Saira Stencil One';
+    position: relative;
+    background-color: #ffffff;
+    border: none;
+    text-align: center;
+    -webkit-transition-duration: 0.4s; /* Safari */
+    transition-duration: 0.4s;
+    text-decoration: none;
+    overflow: hidden;
+     
+ }
+ 
+ 
+ 
+ .artikel1 button:hover{
+    background:#fff;
+    box-shadow:0px 2px 10px 5px #97B1BF;
+    color:#000;
+ }
+ 
+ .artikel1 button:after {
+     content: "";
+     background: #ffffff;
+     display: block;
+     position: absolute;
+ 
+     opacity: 0;
+     transition: all 0.8s
+ }
+ 
+ .artikel1 button:active:after {
+    
+     opacity: 1;
+     transition: 0s
+ }
+
 .p-button,
 .p-button::after {
     position: static;
@@ -340,20 +384,21 @@ h1 {
 }
 
 .artikel1 {
+    
     width: 100%;
-    height: 900px;
+    margin: auto;
+    height: 700px;
     background-image: url(/assets/photos/festivaldj.jpg);
     background-size: cover;
 }
 
-
 .flexbox2 {
-    width: 30%;
+    width: 80%;
+    margin: auto;
     height: 500px;
-    margin-left: 10%;
-    margin-right: 20%;
     background-color: #000000be;
 }
+
 
 .flexbox2 p {
     color: white;
@@ -364,15 +409,20 @@ h1 {
 }
 
 .artikel2 {
+    display: inline;
     background-image: url(/assets/photos/eventshomepage.jpg);
     background-size: cover;
     height: 1000px;
-    width: 100%;
+    margin: auto;
     color: white;
+    
 }
+
+
 
 .bigcont {
     width: 100%;
+    margin: auto;
     height: 1000px;
     display: flex;
     flex-direction: row;
@@ -387,15 +437,37 @@ marquee {
 }
 
 .cont1 {
-    width: 25%;
-    height: 400px;
-    background-color: rgba(0, 0, 0, 0.911);
+    width: 80%;
+    height: 1000px;
+    background-color: rgb(255, 255, 255);
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
     font-size: 20px;
     color: rgb(255, 255, 255);
+    padding-bottom: 6em;
+}
+
+.cont1 h3{
+    font-size: 2em;
+    border-bottom: 2px solid;
+    color: black;
+    margin-top: 2em;
+    margin-bottom: 2em;
+    font-family: 'Saira Stencil One',
+    cursive;
+}
+
+.cont1 p{
+    padding-bottom: 5em;
+    color: black;
+    width: 70%;
+    text-align: left;
+    margin: auto;
+    font-family: 'Catamaran', sans-serif;
+    font-size: 15px;
+    
 }
 
 .meerinfo {
@@ -406,16 +478,85 @@ marquee {
 }
 
 .cont2 {
-    width: 25%;
-    height: 400px;
-    background-color: rgba(0, 0, 0, 0.911);
+    margin-top: 10em;
+    width: 80%;
+    height: 1000px;
+    background-color: rgb(255, 255, 255);
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
     font-size: 20px;
-    color: #ffffff;
+    color: rgb(255, 255, 255);
+    padding-bottom: 6em;
 }
+
+.cont2 h3{
+    font-size: 2em;
+    border-bottom: 2px solid;
+    color: black;
+    margin-top: 2em;
+    margin-bottom: 2em;
+    font-family: 'Saira Stencil One',
+    cursive;
+}
+
+.cont2 p{
+    padding-bottom: 5em;
+    color: black;
+    width: 70%;
+    text-align: left;
+    margin: auto;
+    font-family: 'Catamaran', sans-serif;
+    font-size: 15px;
+}
+
+.cont1 button, .cont2 button{
+    text-decoration: none;
+    color: white;
+    display: block;
+    padding-left: 1em;
+    padding-right: 1em;
+    width: 100%;
+    height: 100%;
+    margin: auto;
+    text-align: center;
+    cursor: pointer;
+    font-size:24px;
+    font-family: 'Saira Stencil One';
+    position: relative;
+    background-color: #000000;
+    border: none;
+    text-align: center;
+    -webkit-transition-duration: 0.4s; /* Safari */
+    transition-duration: 0.4s;
+    text-decoration: none;
+    overflow: hidden;
+     
+ }
+ 
+ 
+ 
+ .cont1 button:hover, .cont2 button:hover{
+    background:#fff;
+    box-shadow:0px 2px 10px 5px #97B1BF;
+    color:#000;
+ }
+ 
+ .cont1 button:after, .cont2 button:after {
+     content: "";
+     background: #ffffff;
+     display: block;
+     position: absolute;
+     opacity: 0;
+     transition: all 0.8s
+ }
+ 
+ .cont1 button:active:after, .cont2 button:after {
+    
+     opacity: 1;
+     transition: 0s
+ }
 
 footer {
     background-color: #7a1399;
@@ -454,8 +595,12 @@ h2 {
     justify-content: center;
 }
 
+.sponsor1, .sponsor2, .sponsor3{
+    margin: 1em;
+}
+
 .flex {
-    padding-top: 100px;
+    padding-top: 300px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -468,6 +613,10 @@ h2 {
     font-size: 30px;
     padding: 100px;
     text-align: center;
+}
+
+.tekstsponsor p{
+    font-family: 'Catamaran', sans-serif;
 }
 
 .flex1 {
@@ -485,6 +634,7 @@ h2 {
 .flex1 a {
     color: #d4d4d4;
     text-decoration: none;
+    
 }
 
 .flex2 {
@@ -496,6 +646,7 @@ h2 {
     justify-content: space-evenly;
     align-items: center;
     color: #fff;
+    font-family: 'Catamaran', sans-serif;
 }
 
 hr {
@@ -537,7 +688,7 @@ hr {
 
     text-align: center;
     width: 100%;
-    height: 700px;
+    height: 1000px;
     background-image: url(/assets/photos/festivaldj.jpg);
     background-size: cover;
     }
@@ -603,64 +754,26 @@ hr {
     padding: 0;
     margin: 0;
     opacity: 1;
-    transition: 0s
+    transition: 0s;
 }
-    .artikel2{
-        height: 300vh;
-        width: 100%;
-        padding-top: 3em;
-    }
-
-    .bigcont {
-        width: 100%;
-        height: 1000vh;
-        display: inline;
-        flex-direction: row;
-        justify-content: space-evenly;
-        align-items: center;
-    }
-
-    .cont1, .cont2{
-        border-bottom-left-radius: 20px;
-        border-bottom-right-radius: 20px;
-        width: 80%;
-        margin: auto;
-        padding-bottom: 5em;
-    }
-    .cont1 img, .cont2 img{
-
-        background-image:
-        linear-gradient(to bottom, rgba(245, 246, 252, 0.52), rgba(117, 19, 93, 0.73)),
-        url('../photos/festivaldj.jpg');
-        border-top-left-radius: 20px;
-        border-top-right-radius: 20px;
+.artikel2{
+    height: 300vh;
+    width: 100%;
+    padding-top: 3em;
         
-    }
+ }
 
-    .cont1 h3, .cont2 h3{
-        margin-top: 2em;
-        font-family: 'Saira Stencil One',
-        cursive;
-    }
-
-    .cont1 p, .cont2 p{
-        padding: 3em;
-        width: 80%;
-        font-size: 15px;
-        font-family: 'Catamaran', sans-serif;
-        margin-bottom: 5em;
-    }
-
-    .bigcont button{
-        width: 80%;
-        margin: auto;
-        text-align: center;
-        cursor: pointer;
-        font-size:24px;
+   
+.artikel1 button{
+    width: 80%;
+    margin: auto;
+    text-align: center;
+    cursor: pointer;
+    font-size:24px;
         
-       }
+}
     
-    .bigcont button{
+    .artikel1 button{
         margin-top: 3em;
         font-family: 'Saira Stencil One';
         position: relative;
@@ -675,13 +788,13 @@ hr {
         overflow: hidden;
     }
     
-    .bigcont button:hover{
+    .artikel1 button:hover{
        background:#fff;
        box-shadow:0px 2px 10px 5px #97B1BF;
        color:#000;
     }
     
-    .bigcont button:after {
+    .artikel1 button:after {
         content: "";
         background: #ffffff;
         display: block;
@@ -693,8 +806,9 @@ hr {
         opacity: 0;
         transition: all 0.8s
     }
+
     
-    .bigcont button:active:after {
+    .artikel1 button:active:after {
         padding: 0;
         margin: 0;
         opacity: 1;
@@ -717,7 +831,7 @@ hr {
 
 }
 
-    .sponsor1, .sponsor2 {
+    .sponsor1, .sponsor2, .sponsor3 {
     margin: auto;
     width: 80%;
     
@@ -732,8 +846,9 @@ hr {
     }
 
     .flex2 {
+        font-size: 13px;
         font-family: 'Catamaran', sans-serif;
-        width: 30%;
+        width: 60%;
         margin: auto;
         height: 30px;
         padding-top: 100px;
@@ -744,4 +859,9 @@ hr {
         color: #fff;
     }
    
+    .flex1 a{
+        font-size: 0.5em;
+    }
+
+    
 }

@@ -5,8 +5,7 @@
 }
 
 body {
-    background-image: url(/assets/photos/contact.gif);
-    background-size: contain;
+background-color: rgb(16, 16, 17);
 }
 
 header {
@@ -37,6 +36,14 @@ h1 {
     border-bottom-left-radius: 80px;
     border-bottom-right-radius: 80px;
 }
+
+
+
+#container1{
+    background-color: white;
+}
+
+
 
 
 .navLogo {
@@ -156,7 +163,7 @@ h1 {
     position: absolute;
     left: 5%;
     bottom: 0;
-    width: 30px;
+    width: 300px;
     height: 3px;
     background-color: #fff;
     border-radius: 5px;
@@ -236,7 +243,13 @@ h2 {
     font-family: 'Saira Stencil One',
         cursive;
     padding-top: 100px;
+    
 
+}
+
+section h2 {
+    border-bottom: white solid 1px;
+    padding-bottom: 0.5em;
 }
 
 .sponsors {
@@ -347,15 +360,32 @@ textarea {
 }
 
 #container1 {
-    border: solid 3px #474544;
-    max-width: 700px;
-    margin: 60px auto;
+    width: 100%;
+    margin: auto;
     position: static;
 
 }
 
-.sectie1 {
-    padding-top: 10px;
+.display-flex{
+    
+    display: flex;
+    justify-content: center;
+    align-self: center;
+}
+
+
+
+section img{
+    width: 50%;
+    overflow: hidden;
+    background-size: cover;
+    object-fit: cover;
+ 
+}
+
+section p{
+    font-size: 10px;
+    margin-bottom: 4em;
 }
 
 form {
@@ -364,8 +394,9 @@ form {
 }
 
 h1 {
+    padding-top: 2em;
     color: #474544;
-    font-size: 32px;
+    font-size: 1.5em;
     font-weight: 700;
     letter-spacing: 7px;
     text-align: center;
@@ -373,15 +404,12 @@ h1 {
 }
 
 h2 {
+    margin-bottom: 1em;
     font-size: 60px;
     text-align: center;
 }
 
-.underline {
-    border-bottom: solid 2px #474544;
-    margin: -0.512em auto;
-    width: 80px;
-}
+
 
 .icon_wrapper {
     margin: 50px auto 0;
@@ -407,7 +435,7 @@ select,
 textarea {
     background: none;
     border: none;
-    border-bottom: solid 2px #474544;
+    border-bottom: solid 1.5px #474544;
     color: #474544;
     font-size: 1.000em;
     font-weight: 400;
@@ -441,7 +469,11 @@ textarea:focus {
 
 .name {
     float: left;
-    width: 45%;
+    width: 100%;
+}
+
+.email{
+    width: 100%;
 }
 
 select {
@@ -509,47 +541,81 @@ textarea {
     background: #474544;
     color: #F2F3EB;
 }
+@media (max-width: 480px){
 
-@media screen and (max-width: 768px) {
+    .tekstsponsor p{
+        font-size: 15px;
+        font-family: 'Catamaran', sans-serif;
+    }
+
+    .sponsors {
+    display: inline;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    height: 500px;
+    width: 50%;
+
+}
+
+    .sponsor1, .sponsor2, .sponsor3 {
+    margin: auto;
+    width: 80%;
+    
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    }
+
+    .sponsor1{
+        margin-bottom: 6em;
+    }
+
+    .flex2 {
+        font-size: 13px;
+        font-family: 'Catamaran', sans-serif;
+        width: 60%;
+        margin: auto;
+        height: 30px;
+        padding-top: 100px;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        align-items: center;
+        color: #fff;
+    }
+   
+    .flex1 a{
+        font-size: 0.5em;
+    }
+
+    .display-flex{
+        display: inline;
+        justify-content: center;
+        align-self: center;
+    }
+
+    section img{
+        width: 0%;
+    }
+
     #container1 {
-        margin: 20px auto;
         width: 95%;
+        margin: auto;
+        position: static;
+    
+    }
+
+    section p {
+        width: 70%;
+        margin: auto;
     }
 }
 
-@media screen and (max-width: 480px) {
 
 
-    .underline {
-        width: 68px;
-    }
 
-    #form_button {
-        padding: 15px 25px;
-    }
-}
-
-@media screen and (max-width: 420px) {
-    h1 {
-        font-size: 18px;
-    }
-
-    .icon {
-        height: 35px;
-        width: 35px;
-    }
-
-    .underline {
-        width: 53px;
-    }
-
-    input[type='text'],
-    [type='email'],
-    select,
-    textarea {
-        font-size: 0.875em;
-    }
-}
 
 p {
     text-align: center;

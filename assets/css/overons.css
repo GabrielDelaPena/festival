@@ -1,6 +1,10 @@
 * {
     margin: 0;
     padding: 0;
+    
+}
+body{
+    background-image: url(/assets/photos/overonsbackground.jpg);
 }
 
 h1 {
@@ -189,21 +193,11 @@ h1 {
     border-bottom-right-radius: 80px;
 }
 
-.center {
-    background-color: #000000;
-    width: 20%;
-    height: 13vh;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    border-bottom-right-radius: 80px;
+.overonsbackground h2{
+    border-bottom: white solid 1px;
+    padding-bottom: 0.5em;
 }
 
-p {
-    text-align: center;
-    color: #ffffff;
-    padding-bottom: 10px;
-}
 
 .navSM a {
     color: #d4d4d4;
@@ -211,10 +205,10 @@ p {
 }
 
 .overonsbackground {
-    background-image: url(/assets/photos/overonsbackground.jpg);
+   
     background-size: cover;
     width: 100%;
-    height: 900px;
+    height: 300px;
 }
 
 .displaycontainer {
@@ -222,27 +216,31 @@ p {
     flex-direction: row;
     justify-content: space-evenly;
 }
+.box1{
+    padding: 2em;
+    background-color: rgb(255, 255, 255);
+    border-radius: 5px;
+    width: 80%;
+    margin: auto;
+}
+.box1 h3{
+    font-size: 2em;
+    margin-bottom: 2em;
+    margin-right: 2em;
+    font-family: 'Saira Stencil One',
+    cursive;
+}
+.box1 p{
+    font-family: 'Catamaran', sans-serif;
+}
+
+.border{
+    margin-bottom: 3em;
+}
 
 h2 {
     font-size: 60px;
     text-align: center;
-}
-
-.balk {
-    width: 40%;
-    height: 600px;
-    background-color: #000000a8;
-    font-size: 18px;
-    padding: 3px;
-
-}
-
-.balk2 {
-    height: 600px;
-    background-color: #000000a8;
-    width: 40%;
-    font-size: 18px;
-    padding: 3px;
 }
 
 
@@ -314,7 +312,6 @@ h2 {
     color: #d4d4d4;
     text-decoration: none;
 }
-
 .flex2 {
     width: 30%;
     height: 30px;
@@ -324,6 +321,17 @@ h2 {
     justify-content: space-evenly;
     align-items: center;
     color: #fff;
+    font-family: 'Catamaran', sans-serif;
+}
+
+#faq{
+    width: 100%;
+    margin: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+   
 }
 
 hr {
@@ -335,4 +343,74 @@ hr {
 
 img {
     padding-bottom: 50px;
+}
+
+.tekstsponsor {
+    color: white;
+    font-size: 30px;
+    padding: 100px;
+    text-align: center;
+}
+
+.tekstsponsor p{
+    font-family: 'Catamaran', sans-serif;
+}
+
+@media (max-width: 480px){
+    #faq{
+        width: 100%;
+        margin: auto;
+        display: inline;
+        flex-direction: row;
+        justify-content: space-evenly;
+        align-items: center;
+       
+    } 
+
+    .tekstsponsor p{
+        font-size: 15px;
+        font-family: 'Catamaran', sans-serif;
+    }
+
+    .sponsors {
+    display: inline;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    height: 500px;
+    width: 50%;
+
+}
+
+    .sponsor1, .sponsor2, .sponsor3 {
+    margin: auto;
+    width: 80%;
+    
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    }
+
+    .sponsor1{
+        margin-bottom: 6em;
+    }
+
+    .flex2 {
+        font-size: 13px;
+        font-family: 'Catamaran', sans-serif;
+        width: 60%;
+        margin: auto;
+        height: 30px;
+        padding-top: 100px;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        align-items: center;
+        color: #fff;
+    }
+   
+    .flex1 a{
+        font-size: 0.5em;
+    }
 }
