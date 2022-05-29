@@ -30,32 +30,25 @@
     <!-- Header : Container met Navigatie Logo(navLogo) - Navigatie Menu (navMenu) - Navigatie Social Media (navSM) -->
     <!-- de indicator zijn de drie puntjes bij mouseover op navMenu-->
     <header>
-        <div class="container">
-            <div class="navLogo">
-                <a href="home.html"><img src="/assets/photos/Logo.png" alt="" width="80px"></a>
-            </div>
-
-            <div class="navMenu">
-                <a href="home.html">Homepage</a>
-                <a href="evenement.html">Evenement</a>
-                <a href="ticket.html">Ticket</a>
-                <a href="overons.html">Over Ons</a>
-                <a href="contact.html">Contact</a>
-
-                <div class="indicator"></div>
-            </div>
-
-            <div class="center">
-                <div class="navSM">
-                    <a href="www.facebook.com/tfestival" class="fa fa-facebook"></a>
-                    <a href="www.twitter.com/oranjefestival" class="fa fa-twitter"></a>
-                    <a href="www.youtube.com/channel/UCoxcrlsEtLdf3VWBVrJZPSA" class="fa fa-youtube"></a>
-                    <a href="www.snapchat.com/" class="fa fa-snapchat"></a> |
-                    <a href="login.html"><i id="login_icon" class="far fa-user-circle user_icon"
-                            style="font-size: 36px"></i></a>
-                </div>
-            </div>
-        </div>
+        <nav>
+            <div class="logo"><img src="/assets/photos/Logo.png" alt=""></div>
+            <div class="openMenu"><i class="fa fa-bars"></i></div>
+            <ul class="mainMenu">
+                <li><a href="home.html">Homepage</a></li>
+                <li><a href="evenement.html">Evenement</a></li>
+                <li><a href="ticket.html">Ticket</a></li>
+                <li><a href="overons.html">Over Ons</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <div class="closeMenu"><i class="fa fa-times"></i></div>
+                <span class="icons">
+                    <i class="fab fa-facebook"></i>
+                    <i class="fab fa-twitter"></i>
+                    <i class="fab fa-youtube"></i>
+                    <i class="fab fa-snapchat"></i>
+                    <i class="fas fa-users"></i>
+                </span>
+            </ul>
+        </nav>
     </header>
 
     <main>
@@ -81,40 +74,125 @@
                     <div>
                         <div id="weeks">
                            <div class="week1">
-                               <p>Week - 1</p>
+                               <button id="btn-day1">Day - 1</button> 
                            </div>
-                           |
+                          
                            <div class="week2">
-                               <p>Week - 2</p>
+                                <button id="btn-day2">Day - 2</button> 
                            </div>
-                           |
+                           
                            <div class="week3">
-                               <p>Week - 3</p>
+                                <button id="btn-day3">Day - 3</button> 
                            </div>
                         </div>
+                        <h2 id="day"></h2>
                     </div>
 
-                    <div id="event">
-                        <h2>Week 1</h2>
-                        <div class="event1">
+                    <div id="event-day1">
+                        
+                        <div id="event1">
                             <div class="event-text1">
-                                <p>Week - 1</p>
+                                <p>Dag - 1 | 11:00 - 14:00</p>
                                 <h3>Event 1</h3>
                                 <p>Hallo, Lorem ipsum dolor sit amet consectetur, adipisicing elit. 
                                    Perferendis, illum voluptate eligendi placeat aliquam laborum ab. 
                                    Odit quas cupiditate voluptatum facere impedit ad. 
                                    Tenetur ea illum doloremque non delectus sit?
                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. 
-                                   Dolor, nesciunt. Ducimus ipsa quibusdam impedit quaerat reprehenderit delectus veritatis nihil quae.
-                                   Unde ut dicta magni dolor possimus esse ea nemo doloribus? Lorem ipsum dolor sit amet consectetur adipisicing elit. 
-                                   Temporibus quibusdam magnam unde eos. 
-                                   Odio aperiam illo eos labore quod dolorem, optio, dignissimos maxime, repellendus facere autem commodi laboriosam corporis voluptates.</p>
+                                </p>
+                                <a href="ticket.html"><button >ORDER TICKET &#8594</button></a>
                             </div>
-                            <div class="event-photo1">
-
+                            <div>
+                                <img src="/assets/photos/overonsbackground.jpg" alt="">
+                            </div>
+                        </div>
+                       
+                        <div id="event1">
+                            <div class="event-text1">
+                                <p>Dag - 1 | 14:00 - 3:00</p>
+                                <h3>Event 2</h3>
+                                <p>Hallo, Lorem ipsum dolor sit amet consectetur, adipisicing elit. 
+                                   Perferendis, illum voluptate eligendi placeat aliquam laborum ab. 
+                                   Odit quas cupiditate voluptatum facere impedit ad. 
+                                   Tenetur ea illum doloremque non delectus sit?
+                                   Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                                </p>
+                                <a href="ticket.html"><button >ORDER TICKET &#8594</button></a>
+                            </div>
+                            <div>
+                                <img src="/assets/photos/tfestival2.jpg" alt="">
+                            </div>
+                        </div>
+                    </div> 
+                    <div id="event-day2"> 
+                        <div id="event2">
+                            <div class="event-text2">
+                                <p>Dag - 2 | 12:00 - 17:00</p>
+                                <h3>Event 1</h3>
+                                <p>Hallo, Lorem ipsum dolor sit amet consectetur, adipisicing elit. 
+                                   Perferendis, illum voluptate eligendi placeat aliquam laborum ab. 
+                                   Odit quas cupiditate voluptatum facere impedit ad. 
+                                   Tenetur ea illum doloremque non delectus sit?
+                                   Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                                </p>
+                                <a href="ticket.html"><button >ORDER TICKET &#8594</button></a>
+                            </div>
+                            <div>
+                                <img src="/assets/photos/tfestival.jpg" alt="">
+                            </div>
+                        </div>
+                        <div id="event2">
+                            <div class="event-text2">
+                                <p>Dag - 2 | 18:00 - 3:00</p>
+                                <h3>Event 2</h3>
+                                <p>Hallo, Lorem ipsum dolor sit amet consectetur, adipisicing elit. 
+                                   Perferendis, illum voluptate eligendi placeat aliquam laborum ab. 
+                                   Odit quas cupiditate voluptatum facere impedit ad. 
+                                   Tenetur ea illum doloremque non delectus sit?
+                                   Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                                </p>
+                                <a href="ticket.html"><button >ORDER TICKET &#8594</button></a>
+                            </div>
+                            <div>
+                                <img src="/assets/photos/tfestival2.jpg" alt="">
+                            </div>
+                        </div>
+                    </div>  
+                    <div id="event-day3">  
+                        <div id="event3">
+                            <div class="event-text3">
+                                <p>Dag - 3 | 09:00 - 16:30</p>
+                                <h3>Event 1</h3>
+                                <p>Hallo, Lorem ipsum dolor sit amet consectetur, adipisicing elit. 
+                                   Perferendis, illum voluptate eligendi placeat aliquam laborum ab. 
+                                   Odit quas cupiditate voluptatum facere impedit ad. 
+                                   Tenetur ea illum doloremque non delectus sit?
+                                   Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                                </p>
+                                <a href="ticket.html"><button >ORDER TICKET &#8594</button></a>
+                            </div>
+                            <div>
+                                <img src="/assets/photos/tfestival.jpg" alt="">
+                            </div>
+                        </div>
+                        <div id="event3">
+                            <div class="event-text3">
+                                <p>Dag - 3 | 16:30 - 6:00</p>
+                                <h3>Event 2</h3>
+                                <p>Hallo, Lorem ipsum dolor sit amet consectetur, adipisicing elit. 
+                                   Perferendis, illum voluptate eligendi placeat aliquam laborum ab. 
+                                   Odit quas cupiditate voluptatum facere impedit ad. 
+                                   Tenetur ea illum doloremque non delectus sit?
+                                   Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                                </p>
+                                <a href="ticket.html"><button >ORDER TICKET &#8594</button></a>
+                            </div>
+                            <div>
+                                <img src="/assets/photos/overonsbackground.jpg" alt="">
                             </div>
                         </div>
                     </div>
+                </div>  
                 </div>
             </section>
     </main>     

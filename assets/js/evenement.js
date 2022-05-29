@@ -38,3 +38,70 @@
             }
         }, 0)
 }())
+
+// BUTTON VOOR DAYS
+
+const day1Button = document.getElementById('btn-day1');
+const day2Button = document.getElementById('btn-day2');
+const day3Button = document.getElementById('btn-day3');
+
+const eventDay1 = document.getElementById('event-day1');
+const eventDay2 = document.getElementById('event-day2');
+const eventDay3 = document.getElementById('event-day3');
+
+const day = document.getElementById('day');
+let dayText = "Day 1";
+
+day.innerHTML = dayText;
+
+
+
+function showContainer(container) {
+    // this function will change the display to block  
+    container.style.display = "block";
+  }
+
+  function hideContainer(container) {
+    // this function will change the display to none 
+    container.style.display = "none";
+  }
+
+day1Button.addEventListener('click', (event) => {
+    showContainer(eventDay1);
+    hideContainer(eventDay2);
+    hideContainer(eventDay3);
+    day.innerHTML = "Day 1"
+});
+
+day2Button.addEventListener('click', (event) => {
+    showContainer(eventDay2);
+    hideContainer(eventDay1);
+    hideContainer(eventDay3);
+    day.innerHTML = "Day 2"
+});
+
+day3Button.addEventListener('click', (event) => {
+    showContainer(eventDay3);
+    hideContainer(eventDay2);
+    hideContainer(eventDay1);
+    day.innerHTML = "Day 3"
+});
+
+
+/* NAV */
+
+const mainMenu = document.querySelector('.mainMenu');
+const closeMenu = document.querySelector('.closeMenu');
+const openMenu = document.querySelector('.openMenu');
+
+openMenu.addEventListener('click', show);
+closeMenu.addEventListener('click', close);
+
+function show(){
+    mainMenu.style.display = 'flex';
+    mainMenu.style.top = '0';
+}
+
+function close(){
+    mainMenu.style.top = '-100%';
+}

@@ -1,6 +1,8 @@
 * {
+   
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
 
 }
 
@@ -11,9 +13,102 @@ background-image: url(/assets/photos/overonsbackground.jpg);
 background-size: cover;
     object-fit: cover;
 }
+/* NAVIGATION */
 
+
+nav{
+    position: fixed;
+    width: 100%;
+    height: 10%;
+    margin: auto;
+    font-family: saira Stencil one;
+    background-color: black;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+}
+
+nav .mainMenu{
+    width: 100%;
+    margin: auto;
+    padding-bottom: 4em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    list-style: none;
+}
+
+nav .mainMenu li a{
+    display: inline-block;
+    padding: 15px;
+    text-decoration: none;
+    text-transform: uppercase;
+    color: white;
+    font-size: 1.5rem;
+}
+
+nav .mainMenu li a:hover {
+    background: rgb(255, 255, 255);
+    color: black;
+}
+
+nav .openMenu{
+    font-size: 2rem;
+    margin: 20px;
+    display: none;
+    cursor: pointer;
+}
+
+nav .mainMenu .closeMenu {
+    font-size: 2rem;
+    display: none;
+    cursor: pointer;
+}
+
+.icons{
+    font-size: 1.5em;
+    margin-left: 2em;
+}
+
+.icons i {
+    margin-left: 0.5em;
+}
+
+.fa-facebook:hover{
+    background: rgb(255, 255, 255);
+    color: black;
+}
+
+.fa-twitter:hover{
+    background: rgb(255, 255, 255);
+    color: black;
+}
+
+.fa-youtube:hover{
+    background: rgb(255, 255, 255);
+    color: black;
+}
+
+.fa-snapchat:hover{
+    background: rgb(255, 255, 255);
+    color: black;
+}
+
+.fa-users:hover{
+    background: rgb(255, 255, 255);
+    color: black;
+}
+
+.logo img{
+    margin: 6px;
+    cursor: pointer;
+    width: 40%;
+    
+}
+
+/* NAVIGATION */
 header {
-    background-color: #00e2ff;
+    background-color: #000000;
 }
 
 h1 {
@@ -28,7 +123,9 @@ h1 {
     padding-left: 40px;
 }
 
-.container {
+
+
+/*.container {
     background-color: black;
     width: 100%;
     height: 13vh;
@@ -220,6 +317,11 @@ h1 {
     border-bottom-right-radius: 80px;
 }
 
+.navSM a {
+    color: #d4d4d4;
+    text-decoration: none;
+}
+*/
 
 p {
     text-align: center;
@@ -227,10 +329,7 @@ p {
     padding-bottom: 10px;
 }
 
-.navSM a {
-    color: #d4d4d4;
-    text-decoration: none;
-}
+
 
 footer {
     background-color: #7a1399;
@@ -546,6 +645,51 @@ textarea {
     color: #000000;
 }
 @media (max-width: 480px){
+    nav{
+        height: 15%;
+    }
+
+    nav .mainMenu{
+        height: 100vh;
+        position: fixed;
+        top: 0;
+        right: 0;
+        left: 0;
+        z-index: 10;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        background: black;
+        transition: top 1s ease;
+        display: none;
+    }
+
+    nav .mainMenu .closeMenu{
+        display: block;
+        position: absolute;
+        top: 20;
+        right: 20px;
+    }
+
+    nav .openMenu {
+        display: block;
+    }
+
+    nav .mainMenu li a:hover{
+        background: none;
+        color: white;
+        font-size: 1.6rem;
+    }
+
+    .icons{
+        margin-right: 2.5em;
+    }
+
+    .icons i{
+        
+        display: inline-block;
+        padding: 12px;
+    }
 
     .tekstsponsor p{
         font-size: 15px;
