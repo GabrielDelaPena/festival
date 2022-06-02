@@ -8,20 +8,20 @@ body {
 }
 
 
-/* NAVIGATION */
-
 header{
     background-color: black;
     
 }
 
 nav{
+    z-index: 9999;
+    box-shadow: white 4px 4px 40px;
     position: fixed;
     width: 100%;
     height: 10%;
     margin: auto;
     font-family: saira Stencil one;
-    background-color: black;
+    background-color: rgb(0, 0, 0);
     color: white;
     display: flex;
     justify-content: space-between;
@@ -44,6 +44,13 @@ nav .mainMenu li a{
     text-transform: uppercase;
     color: white;
     font-size: 1.5rem;
+    font-family: 'Saira Stencil One',
+    cursive;
+    
+}
+
+.highlight{
+    border-bottom: solid rgb(255, 255, 255) 2px;
 }
 
 nav .mainMenu li a:hover {
@@ -99,21 +106,13 @@ nav .mainMenu .closeMenu {
 }
 
 .logo img{
-    margin: 6px;
+    margin-left: 25%;
     cursor: pointer;
-    width: 40%;
+    width: 30%;
     
 }
 
 /* NAVIGATION */
-
-p {
-    text-align: center;
-    color: #ffffff;
-    padding-bottom: 10px;
-}
-
-
 
 .backgroundfoto {
     background-image: url(/assets/photos/giphy3.gif);
@@ -334,109 +333,98 @@ h1 {
     color: white;
     
 }
+#event-day1{
+    background-color: black;
+}
 
-
-
-.bigcont {
-    width: 100%;
+#event1, #event2, #event3 {
+    
+    padding-top: 10em;
+    width: 90%;
     margin: auto;
-    height: 1000px;
     display: flex;
-    flex-direction: row;
-    justify-content: space-evenly;
-    align-items: center;
-}
-
-marquee {
-    width: 100%;
-    height: 30px;
-    position: static;
-}
-
-.cont1 {
-    width: 80%;
-    height: 1000px;
-    background-color: rgb(255, 255, 255);
-    display: flex;
-    flex-direction: column;
+    order: 2;
     align-items: center;
     justify-content: center;
-    font-size: 20px;
-    color: rgb(255, 255, 255);
-    padding-bottom: 6em;
 }
 
-.cont1 h3{
-    font-size: 2em;
-    border-bottom: 2px solid;
-    color: black;
-    margin-top: 2em;
-    margin-bottom: 2em;
-    font-family: 'Saira Stencil One',
-    cursive;
+ #event-day2, #event-day3{
+    display: none;
+   
 }
 
-.cont1 p{
-    padding-bottom: 5em;
-    color: black;
-    width: 70%;
-    text-align: left;
-    margin: auto;
-    font-family: 'Catamaran', sans-serif;
-    font-size: 15px;
+#event-day1 img, #event-day2 img, #event-day3 img{
+    
+    max-height:90%; 
+    max-width:90%;
+    overflow: hidden;
+    background-size: cover;
+    object-fit: fill;
     
 }
 
-.meerinfo {
-    display: flex;
-    flex-direction: column;
-    justify-content: end;
-    align-items: flex-end;
+#event-day1 p, #event-day2 p, #event-day3 p {
+    color: rgb(97, 97, 97);
+    padding-bottom: 1.1em;
 }
 
-.cont2 {
-    margin-top: 10em;
-    width: 80%;
-    height: 1000px;
-    background-color: rgb(255, 255, 255);
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    font-size: 20px;
-    color: rgb(255, 255, 255);
-    padding-bottom: 6em;
-}
 
-.cont2 h3{
-    font-size: 2em;
-    border-bottom: 2px solid;
-    color: black;
-    margin-top: 2em;
+#event h2{
     margin-bottom: 2em;
-    font-family: 'Saira Stencil One',
-    cursive;
 }
 
-.cont2 p{
-    padding-bottom: 5em;
-    color: black;
-    width: 70%;
-    text-align: left;
-    margin: auto;
+#weeks p {
+    
+    padding: 4em;
+    font-size: 1.5em;
     font-family: 'Catamaran', sans-serif;
-    font-size: 15px;
+    margin: auto;
+    color: white;
 }
 
-.cont1 button, .cont2 button{
+.event-text1, .event-text2, .event-text3{
+    margin-left: 5em;
+    max-width: 35%;
+    margin: auto;
+    background-color: white;
+}
+
+
+
+.event-text1 h3, .event-text2 h3, .event-text3 h3{
+    padding-top: 1.5em;
+    margin-left: 1.5em;
+    margin-right: 2em;
+    text-align: left;
+    font-size: 2em;
+    border-bottom: black 2px solid;
+    color: black;
+    font-family: 'Saira Stencil One',
+        cursive;
+}
+
+
+.event-text1 p, .event-text2 p, .event-text3 p{
+    line-height: 2em;
+    padding-top: 1.5em;
+    margin-left: 3em;
+    margin-right: 2em;
+    text-align: left;
+    color: black;
+    font-family: 'Catamaran', sans-serif;
+}
+
+
+
+.event-text1 button, .event-text2 button,  .event-text3 button{
     text-decoration: none;
     color: white;
     display: block;
+    margin: 2em;
     padding-left: 1em;
     padding-right: 1em;
-    width: 100%;
+    width: 50%;
     height: 100%;
-    margin: auto;
     text-align: center;
     cursor: pointer;
     font-size:24px;
@@ -449,18 +437,19 @@ marquee {
     transition-duration: 0.4s;
     text-decoration: none;
     overflow: hidden;
+    
      
  }
  
  
  
- .cont1 button:hover, .cont2 button:hover{
+ .event-text1 button:hover, .event-text2 button:hover, .event-text3 button:hover{
     background:#fff;
     box-shadow:0px 2px 10px 5px #97B1BF;
     color:#000;
  }
  
- .cont1 button:after, .cont2 button:after {
+ .event-text1 button:after,  .event-text2 button:after, .event-text3 button:after{
      content: "";
      background: #ffffff;
      display: block;
@@ -469,11 +458,13 @@ marquee {
      transition: all 0.8s
  }
  
- .cont1 button:active:after, .cont2 button:after {
+ .event-text1 button:active:after,  .event-text2 button:active:after, .event-text3 button:active:after{
     
      opacity: 1;
      transition: 0s
  }
+
+
 
 footer {
     background-color: #7a1399;
@@ -573,20 +564,19 @@ hr {
     background-image: linear-gradient(to right, rgba(204, 194, 194, 0), rgba(230, 230, 230, 0.75), rgba(233, 222, 222, 0));
 }
 
-
+@media (min-width: 768px) and (max-width: 1024px){
+    .backgroundfoto h2{
+        color: green;
+    }
+}
 
 @media (max-width: 480px) {
-
     nav{
-        height: 15%;
-    }
-
-    nav .logo img{
-        width: 40%;
+        height: 17%;
     }
 
     nav .mainMenu{
-        
+        box-shadow: white 0px 0px 0px;
         position: fixed;
         top: 0;
         right: 0;
@@ -626,6 +616,11 @@ hr {
         display: inline-block;
         padding: 12px;
     }
+
+    .logo img{
+        margin-left: 0%;
+    }
+
 
     .backgroundfoto{
         text-align: center;
@@ -824,6 +819,78 @@ hr {
    
     .flex1 a{
         font-size: 0.5em;
+    }
+
+    #weeks {
+
+        margin-top: 5em;
+        display: inline-block;
+        justify-content: center;
+        align-content: center;
+        
+    }
+
+    .week1, .week2, .week3{
+        padding-top: 5em;
+    }
+
+    #event1, #event2, #event3 {
+    
+        padding-top: 10em;
+        width: 100%;
+        margin: auto;
+        display: inline-block;
+        order: 2;
+        align-items: center;
+        justify-content: center;
+    }
+    
+
+    .event-text1, .event-text2, .event-text3{
+        margin-left: 5em;
+        padding-bottom: 3em;
+        max-width: 90%;
+        margin: auto;
+        background-color: white;
+    }
+
+    
+    
+
+    .event-text1 button, .event-text2 button,  .event-text3 button{
+        text-decoration: none;
+        color: white;
+        display: block;
+        margin: 2em;
+        padding-left: 1em;
+        padding-right: 1em;
+        width: 50%;
+        height: 100%;
+        margin: auto;
+        text-align: center;
+        cursor: pointer;
+        font-size:24px;
+        font-family: 'Saira Stencil One';
+        position: relative;
+        background-color: #000000;
+        border: none;
+        text-align: center;
+        -webkit-transition-duration: 0.4s; /* Safari */
+        transition-duration: 0.4s;
+        text-decoration: none;
+        overflow: hidden;
+         
+     }
+
+     #event-day1 img, #event-day2 img, #event-day3 img{
+    
+        max-height:90%; 
+        max-width:100%;
+        margin: auto;
+        overflow: hidden;
+        background-size: cover;
+        object-fit: fill;
+        
     }
 
     

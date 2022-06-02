@@ -17,6 +17,8 @@ background-size: cover;
 
 
 nav{
+    z-index: 9999;
+    box-shadow: white 4px 4px 40px;
     position: fixed;
     width: 100%;
     height: 10%;
@@ -100,10 +102,14 @@ nav .mainMenu .closeMenu {
 }
 
 .logo img{
-    margin: 6px;
+    margin-left: 25%;
     cursor: pointer;
-    width: 40%;
+    width: 30%;
     
+}
+
+.highlight{
+    border-bottom: solid rgb(255, 255, 255) 2px;
 }
 
 /* NAVIGATION */
@@ -646,7 +652,7 @@ textarea {
 }
 @media (max-width: 480px){
     nav{
-        height: 15%;
+        height: 17%;
     }
 
     nav .mainMenu{
@@ -683,6 +689,13 @@ textarea {
 
     .icons{
         margin-right: 2.5em;
+    }
+
+    .logo img{
+        margin-left: 0%;
+        cursor: pointer;
+        width: 30%;
+        
     }
 
     .icons i{

@@ -48,6 +48,8 @@ header{
 }
 
 nav{
+    z-index: 9999;
+    box-shadow: white 4px 4px 40px;
     position: fixed;
     width: 100%;
     height: 10%;
@@ -79,6 +81,10 @@ nav .mainMenu li a{
     font-family: 'Saira Stencil One',
     cursive;
     
+}
+
+.highlight{
+    border-bottom: solid rgb(255, 255, 255) 2px;
 }
 
 nav .mainMenu li a:hover {
@@ -134,9 +140,9 @@ nav .mainMenu .closeMenu {
 }
 
 .logo img{
-    margin: 6px;
+    margin-left: 25%;
     cursor: pointer;
-    width: 40%;
+    width: 30%;
     
 }
 
@@ -582,7 +588,7 @@ hr {
 @media (max-width: 480px){
 
     nav{
-        height: 15%;
+        height: 17%;
     }
 
     nav .mainMenu{
@@ -626,6 +632,10 @@ hr {
         padding: 12px;
     }
 
+    .logo img{
+        margin-left: 0%;
+    }
+
 
     #weeks {
 
@@ -650,6 +660,7 @@ hr {
         align-items: center;
         justify-content: center;
     }
+    
 
     .event-text1, .event-text2, .event-text3{
         margin-left: 5em;
